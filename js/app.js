@@ -11,12 +11,12 @@ const animalDialog = document.querySelector('#animalDialog');
 const animalDialogContent = document.querySelector('#animalDialogContent');
 const bottomNav = document.querySelector('#bottomNav');
 const toast = document.querySelector('#toast');
+const themeBtn = document.querySelector('#themeBtn');
 let animals = [];
 let game = loadGame();
 let route = game ? routeForStatus(game.status) : 'home';
 let filters = { query: '', zone: '', points: '' };
 
-applySavedTheme();
 init();
 
 async function init() {
@@ -29,33 +29,10 @@ async function init() {
   }
 }
 
-function applySavedTheme() {
-  const saved = localStorage.getItem('pairiTheme');
-  const theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-  document.documentElement.dataset.theme = theme;
-  updateThemeColor(theme);
-}
-
-function updateThemeColor(theme) {
-  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#111713' : '#f3f5f2');
-}
-
-function updateThemeButton() {
-  const btn = document.querySelector('#themeBtn');
-  if (!btn) return;
-  const dark = document.documentElement.dataset.theme === 'dark';
-  btn.textContent = dark ? '☀️ Activer le mode clair' : '🌙 Activer le mode sombre';
-}
-
 function bindGlobalEvents() {
-  menuBtn.addEventListener('click', () => { updateThemeButton(); menuDialog.showModal(); });
-  document.querySelector('#themeBtn').addEventListener('click', () => {
-    const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-    document.documentElement.dataset.theme = next;
-    localStorage.setItem('pairiTheme', next);
-    updateThemeColor(next);
-    updateThemeButton();
-  });
+  initTheme();
+  themeBtn.addEventListener('click', toggleTheme);
+  menuBtn.addEventListener('click', () => menuDialog.showModal());
   document.querySelectorAll('[data-close-dialog]').forEach(btn => btn.addEventListener('click', () => menuDialog.close()));
   document.querySelector('#exportBtn').addEventListener('click', () => {
     if (!game) return showToast('Aucune partie à exporter.');
@@ -77,6 +54,35 @@ function bindGlobalEvents() {
   });
   backBtn.addEventListener('click', () => { route = game ? routeForStatus(game.status) : 'home'; render(); });
   window.addEventListener('game-saved', () => showToast('✓ Sauvegardé'));
+}
+
+
+function initTheme() {
+  const savedTheme = localStorage.getItem('pairi-theme');
+  if (savedTheme === 'dark' || savedTheme === 'light') {
+    document.documentElement.dataset.theme = savedTheme;
+  }
+  updateThemeButton();
+}
+
+function toggleTheme() {
+  const current = getEffectiveTheme();
+  const next = current === 'dark' ? 'light' : 'dark';
+  document.documentElement.dataset.theme = next;
+  localStorage.setItem('pairi-theme', next);
+  updateThemeButton();
+}
+
+function getEffectiveTheme() {
+  const explicit = document.documentElement.dataset.theme;
+  if (explicit) return explicit;
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
+function updateThemeButton() {
+  if (!themeBtn) return;
+  const dark = getEffectiveTheme() === 'dark';
+  themeBtn.textContent = dark ? '☀️ Activer le mode clair' : '🌙 Activer le mode sombre';
 }
 
 function render() {
