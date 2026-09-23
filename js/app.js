@@ -110,14 +110,14 @@ function renderSetup() {
   app.innerHTML = `
     <div class="section-title"><div><h2>Nouvelle partie</h2><p>Les noms servent uniquement à organiser tes prédictions.</p></div></div>
     <form id="setupForm" class="card stack">
-      <div class="field"><label for="player">Ton prénom / pseudo</label><input id="player" maxlength="30" required placeholder="Arthur"></div>
+      <div class="field"><label for="player">Ton prénom</label><input id="player" maxlength="30" required placeholder="Mon Prénom"></div>
       <div class="field"><label for="opponents">Nombre d'adversaires</label><select id="opponents"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div>
       <div id="opponentFields" class="stack"></div>
       <button class="primary full" type="submit">Choisir mes animaux</button>
     </form>`;
   const count = document.querySelector('#opponents');
   const fields = document.querySelector('#opponentFields');
-  const drawFields = () => { fields.innerHTML = Array.from({length:Number(count.value)},(_,i)=>`<div class="field"><label>Adversaire ${i+1}</label><input name="opponent" maxlength="30" placeholder="Prénom facultatif"></div>`).join(''); };
+  const drawFields = () => { fields.innerHTML = Array.from({length:Number(count.value)},(_,i)=>`<div class="field"><label>Adversaire ${i+1}</label><input name="opponent" maxlength="30" placeholder="Prénom ou Pseudo"></div>`).join(''); };
   count.onchange = drawFields; drawFields();
   document.querySelector('#setupForm').onsubmit = e => {
     e.preventDefault();

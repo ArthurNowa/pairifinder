@@ -696,9 +696,9 @@
     "observation": ""
   },
   {
-    "id": "dory",
-    "name": "Dory",
-    "zone": "",
+    "id": "poisson-chirurgien",
+    "name": "Poisson Chirurgien",
+    "zone": "Cambron-sur-mer",
     "location": "Aquarium",
     "points": 1,
     "observation": ""
