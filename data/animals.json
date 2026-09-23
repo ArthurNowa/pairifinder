@@ -1,0 +1,42 @@
+[
+  {
+    "id": "panda-geant",
+    "name": "Panda géant",
+    "zone": "Le Royaume du Milieu",
+    "location": "Jardin des pandas",
+    "points": 1,
+    "observation": "Vérifier les espaces intérieurs et extérieurs, notamment autour des périodes de repas."
+  },
+  {
+    "id": "fossa",
+    "name": "Fossa",
+    "zone": "Edenya",
+    "location": "Zone des carnivores",
+    "points": 3,
+    "observation": "Animal discret : privilégier le début ou la fin de journée et inspecter les zones en hauteur."
+  },
+  {
+    "id": "wombat",
+    "name": "Wombat",
+    "zone": "Le Cap Austral",
+    "location": "Secteur australien",
+    "points": 3,
+    "observation": "Meilleures chances lorsqu'il est actif ; regarder près des terriers et des zones ombragées."
+  },
+  {
+    "id": "ours-noir",
+    "name": "Ours noir",
+    "zone": "La Dernière Frontière",
+    "location": "Territoire des ours",
+    "points": 2,
+    "observation": "Observer le sol, les structures et les zones ombragées depuis plusieurs points de vue."
+  },
+  {
+    "id": "elephant-asie",
+    "name": "Éléphant d'Asie",
+    "zone": "Le Royaume de Ganesha",
+    "location": "Plaine des éléphants",
+    "points": 1,
+    "observation": "Grand animal généralement visible dans les espaces extérieurs."
+  }
+]
