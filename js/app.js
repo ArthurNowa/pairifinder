@@ -16,6 +16,7 @@ let game = loadGame();
 let route = game ? routeForStatus(game.status) : 'home';
 let filters = { query: '', zone: '', points: '' };
 
+applySavedTheme();
 init();
 
 async function init() {
@@ -28,8 +29,33 @@ async function init() {
   }
 }
 
+function applySavedTheme() {
+  const saved = localStorage.getItem('pairiTheme');
+  const theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.dataset.theme = theme;
+  updateThemeColor(theme);
+}
+
+function updateThemeColor(theme) {
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#111713' : '#f3f5f2');
+}
+
+function updateThemeButton() {
+  const btn = document.querySelector('#themeBtn');
+  if (!btn) return;
+  const dark = document.documentElement.dataset.theme === 'dark';
+  btn.textContent = dark ? '☀️ Activer le mode clair' : '🌙 Activer le mode sombre';
+}
+
 function bindGlobalEvents() {
-  menuBtn.addEventListener('click', () => menuDialog.showModal());
+  menuBtn.addEventListener('click', () => { updateThemeButton(); menuDialog.showModal(); });
+  document.querySelector('#themeBtn').addEventListener('click', () => {
+    const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+    document.documentElement.dataset.theme = next;
+    localStorage.setItem('pairiTheme', next);
+    updateThemeColor(next);
+    updateThemeButton();
+  });
   document.querySelectorAll('[data-close-dialog]').forEach(btn => btn.addEventListener('click', () => menuDialog.close()));
   document.querySelector('#exportBtn').addEventListener('click', () => {
     if (!game) return showToast('Aucune partie à exporter.');
@@ -96,8 +122,7 @@ function renderSetup() {
 }
 
 function renderSelection() {
-  // L'affichage et les filtres ne modifient pas la partie : ne pas sauvegarder ici.
-  game.status = 'selection';
+  game.status = 'selection'; saveGame(game);
   const list = filterAnimals(animals, filters);
   app.innerHTML = `
     <div class="section-title"><div><h2>Choisis tes animaux</h2><p>Construis ta liste secrète de 10 cibles.</p></div><span class="counter">${game.selection.length}/10</span></div>
@@ -182,24 +207,7 @@ function renderResults() {
 function resultOpponent(o,i){return `<div class="card"><h3>${escapeHtml(o.name)}</h3>${o.guesses.map(id=>{const a=getAnimal(animals,id);const checked=o.validatedGuesses.includes(id);return `<label class="score-line"><span>${escapeHtml(a?.name||id)} ${o.jokerGuess===id?'🃏':''}</span><input type="checkbox" data-correct="${id}" data-oi="${i}" ${checked?'checked':''}></label>`}).join('')}<label class="score-line"><span>Joker correctement identifié (+2 bonus)</span><input type="checkbox" data-joker-correct="${i}" ${o.jokerCorrect?'checked':''}></label></div>`;}
 
 function filterMarkup(){return `<input id="search" class="search" type="search" placeholder="🔎 Rechercher..." value="${escapeHtml(filters.query)}"><div class="filter-row"><select id="zoneFilter" class="search"><option value="">Toutes les zones</option>${zonesFrom(animals).map(z=>`<option ${filters.zone===z?'selected':''}>${escapeHtml(z)}</option>`).join('')}</select><select id="pointsFilter" class="search"><option value="">Tous les points</option><option value="1" ${filters.points==='1'?'selected':''}>1 point</option><option value="2" ${filters.points==='2'?'selected':''}>2 points</option><option value="3" ${filters.points==='3'?'selected':''}>3 points</option></select></div>`;}
-function bindFilters(callback){
-  const q=document.querySelector('#search'),z=document.querySelector('#zoneFilter'),p=document.querySelector('#pointsFilter');
-  q.oninput=()=>{
-    filters.query=q.value;
-    const caret=q.selectionStart ?? filters.query.length;
-    callback();
-    // Le rendu recrée le champ : on lui rend immédiatement le focus pour permettre
-    // de continuer à taper sans recliquer après chaque lettre.
-    const nextQ=document.querySelector('#search');
-    if(nextQ){
-      nextQ.focus({preventScroll:true});
-      const pos=Math.min(caret,nextQ.value.length);
-      nextQ.setSelectionRange(pos,pos);
-    }
-  };
-  z.onchange=()=>{filters.zone=z.value;callback();};
-  p.onchange=()=>{filters.points=p.value;callback();};
-}
+function bindFilters(callback){const q=document.querySelector('#search'),z=document.querySelector('#zoneFilter'),p=document.querySelector('#pointsFilter');q.oninput=()=>{filters.query=q.value;callback();};z.onchange=()=>{filters.zone=z.value;callback();};p.onchange=()=>{filters.points=p.value;callback();};}
 function animalCard(a,selected=false,joker=false){return `<button class="animal-card ${selected?'selected':''}" data-animal="${a.id}"><div><div class="animal-name">${selected?'✓ ':''}${escapeHtml(a.name)} ${joker?'<span class="joker">🃏</span>':''}</div><div class="animal-meta">${escapeHtml(a.zone)} · ${escapeHtml(a.location)}</div></div><span class="points p${a.points}">${a.points} pt${a.points>1?'s':''}</span></button>`;}
 function huntCard(a){const found=game.found.includes(a.id);const score=a.points*(game.joker===a.id?3:1);return `<button class="animal-card ${found?'selected found':''}" data-found="${a.id}"><div><div class="animal-name">${found?'✓ ':''}${escapeHtml(a.name)} ${game.joker===a.id?'<span class="joker">🃏</span>':''}</div><div class="animal-meta">${escapeHtml(a.zone)} · ${escapeHtml(a.location)}</div></div><span class="points p${a.points}">${found?'+':''}${score}</span></button>`;}
 function bindAnimalCards(onClick){document.querySelectorAll('[data-animal]').forEach(card=>{card.onclick=e=>{if(e.detail===2){showAnimal(card.dataset.animal);return;}onClick(card.dataset.animal);};card.oncontextmenu=e=>{e.preventDefault();showAnimal(card.dataset.animal);};});}
