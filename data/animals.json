@@ -1,42 +1,2098 @@
 [
   {
-    "id": "panda-geant",
-    "name": "Panda géant",
-    "zone": "Le Royaume du Milieu",
-    "location": "Jardin des pandas",
+    "id": "paon-bleu",
+    "name": "Paon Bleu",
+    "zone": "Partout",
+    "location": "Dans les allées",
     "points": 1,
-    "observation": "Vérifier les espaces intérieurs et extérieurs, notamment autour des périodes de repas."
+    "observation": "Toute la journée ; dans les allées"
+  },
+  {
+    "id": "paon-blanc",
+    "name": "Paon Blanc",
+    "zone": "Partout",
+    "location": "Dans les allées",
+    "points": 2,
+    "observation": "Toute la journée ; dans les allées"
+  },
+  {
+    "id": "cigogne",
+    "name": "Cigogne",
+    "zone": "Partout",
+    "location": "En hauteur",
+    "points": 1,
+    "observation": "Toute la journée ; dans les nids en hauteur ou sur les toits"
+  },
+  {
+    "id": "heron",
+    "name": "Héron",
+    "zone": "Partout",
+    "location": "Près des points d'eau",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "bernache-nonnette",
+    "name": "Bernache nonnette",
+    "zone": "Partout",
+    "location": "Près des points d'eau",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "foulque",
+    "name": "Foulque",
+    "zone": "Partout",
+    "location": "Près des points d'eau",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "martin-pecheur",
+    "name": "Martin-Pêcheur",
+    "zone": "Partout",
+    "location": "Près des points d'eau",
+    "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "bergeronnette-des-ruisseaux",
+    "name": "Bergeronnette des Ruisseaux",
+    "zone": "Partout",
+    "location": "Près des points d'eau",
+    "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "mouette",
+    "name": "Mouette",
+    "zone": "Partout",
+    "location": "Près des points d'eau",
+    "points": 1,
+    "observation": "Toute la journée ; près des plans d'eau"
+  },
+  {
+    "id": "cheval-pure-race-espagnol",
+    "name": "Cheval pure-race espagnol",
+    "zone": "Cambron l'Abbaye",
+    "location": "devant la Mini-Ferme",
+    "points": 2,
+    "observation": "Toute la journée ; enclos ouverts; visibilité généralement bonne."
+  },
+  {
+    "id": "cheval-henson",
+    "name": "Cheval Henson",
+    "zone": "Cambron l'Abbaye",
+    "location": "Autour de la Crypte",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "dromadaire",
+    "name": "Dromadaire",
+    "zone": "Cambron l'Abbaye",
+    "location": "Entrée",
+    "points": 1,
+    "observation": "Toute la journée ; grand animal en espace ouvert."
+  },
+  {
+    "id": "chevre-angora",
+    "name": "Chèvre angora",
+    "zone": "Cambron l'Abbaye",
+    "location": "Mini-Ferme",
+    "points": 1,
+    "observation": "Toute la journée ; très visible dans les zones de ferme."
+  },
+  {
+    "id": "chevre-domestique",
+    "name": "Chèvre domestique",
+    "zone": "Cambron l'Abbaye",
+    "location": "Mini-Ferme",
+    "points": 1,
+    "observation": "Toute la journée ; mini-ferme; visibilité élevée."
+  },
+  {
+    "id": "alpaga",
+    "name": "Alpaga",
+    "zone": "Cambron l'Abbaye",
+    "location": "Mini-Ferme",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "cochon-domestique",
+    "name": "Cochon domestique",
+    "zone": "Cambron l'Abbaye",
+    "location": "Mini-Ferme",
+    "points": 1,
+    "observation": "Toute la journée ; mini-ferme; visibilité élevée."
+  },
+  {
+    "id": "daim",
+    "name": "Daim",
+    "zone": "Cambron l'Abbaye",
+    "location": "Mini-Ferme",
+    "points": 1,
+    "observation": "Toute la journée ; zones de mini-ferme et espaces ouverts."
+  },
+  {
+    "id": "dindon-crolwitzer",
+    "name": "Dindon Crölwitzer",
+    "zone": "Cambron l'Abbaye",
+    "location": "Mini-Ferme",
+    "points": 1,
+    "observation": "Toute la journée ; grand animal en espace ouvert."
+  },
+  {
+    "id": "lapin-domestique",
+    "name": "Lapin domestique",
+    "zone": "Cambron l'Abbaye",
+    "location": "Mini-Ferme",
+    "points": 1,
+    "observation": "Journée ; chercher dans les abris et zones basses de la mini-ferme."
+  },
+  {
+    "id": "lapin-geant-des-flandres",
+    "name": "Lapin géant des Flandres",
+    "zone": "Cambron l'Abbaye",
+    "location": "Mini-Ferme",
+    "points": 1,
+    "observation": "Journée ; chercher dans les abris et zones basses de la mini-ferme."
+  },
+  {
+    "id": "mouton-d-ouessant",
+    "name": "Mouton d'Ouessant",
+    "zone": "Cambron l'Abbaye",
+    "location": "Mini-Ferme",
+    "points": 1,
+    "observation": "Toute la journée ; mini-ferme; visibilité élevée."
+  },
+  {
+    "id": "ane-nain",
+    "name": "Âne nain",
+    "zone": "Cambron l'Abbaye",
+    "location": "Mini-Ferme",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "wallaby",
+    "name": "Wallaby",
+    "zone": "Cambron l'Abbaye",
+    "location": "Mini-Ferme",
+    "points": 1,
+    "observation": "Toute la journée ; chercher dans les zones de mini-ferme; parfois couché à l’ombre."
+  },
+  {
+    "id": "wallaby-blanc",
+    "name": "Wallaby blanc",
+    "zone": "Cambron l'Abbaye",
+    "location": "Mini-Ferme",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "lievre-de-patagonie",
+    "name": "Lièvre de Patagonie",
+    "zone": "Cambron l'Abbaye",
+    "location": "Mini-Ferme",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "ara-de-spix",
+    "name": "Ara de Spix",
+    "zone": "Cambron l'Abbaye",
+    "location": "Mini-Ferme",
+    "points": 2,
+    "observation": "Journée ; observer attentivement les volières et perchoirs."
+  },
+  {
+    "id": "ara-hyacinthe",
+    "name": "Ara Hyacinthe",
+    "zone": "Cambron l'Abbaye",
+    "location": "Mini-Ferme",
+    "points": 2,
+    "observation": "Journée ; observer attentivement les volières et perchoirs."
+  },
+  {
+    "id": "cochon-d-inde",
+    "name": "Cochon d'inde",
+    "zone": "Cambron l'Abbaye",
+    "location": "devant la Mini-Ferme",
+    "points": 1,
+    "observation": "Toute la journée ; à côté de la mini-ferme; visibilité élevée."
+  },
+  {
+    "id": "loup-a-criniere",
+    "name": "Loup à crinière",
+    "zone": "Cambron l'Abbaye",
+    "location": "Entrée",
+    "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "chauve-souris",
+    "name": "Chauve-souris",
+    "zone": "Cambron l'Abbaye",
+    "location": "La Crypte",
+    "points": 2,
+    "observation": "En soirée ; dans les coins ou pendues aux cordes"
+  },
+  {
+    "id": "rat-taupe-nu",
+    "name": "Rat-taupe nu",
+    "zone": "Cambron l'Abbaye",
+    "location": "La Crypte",
+    "points": 1,
+    "observation": "Toute la journée ; regarder dans les galeries visibles et zones éclairées du terrarium."
+  },
+  {
+    "id": "scorpions",
+    "name": "Scorpions",
+    "zone": "Cambron l'Abbaye",
+    "location": "La Crypte",
+    "points": 2,
+    "observation": "Toute la journée ; regarder attentivement le fond et les cachettes du bac."
+  },
+  {
+    "id": "salamandre-tachetee",
+    "name": "Salamandre Tachetée",
+    "zone": "Cambron l'Abbaye",
+    "location": "La Crypte",
+    "points": 2,
+    "observation": "Toute la journée ; regarder attentivement le fond et les cachettes du bac."
+  },
+  {
+    "id": "pleurodele-de-waltl",
+    "name": "Pleurodèle de Waltl",
+    "zone": "Cambron l'Abbaye",
+    "location": "La Crypte",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "grenouilles",
+    "name": "Grenouilles",
+    "zone": "Cambron l'Abbaye",
+    "location": "La Crypte",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "triton-a-crete",
+    "name": "Triton à crête",
+    "zone": "Cambron l'Abbaye",
+    "location": "La Crypte",
+    "points": 2,
+    "observation": "Toute la journée ; regarder attentivement le fond et les cachettes du bac."
+  },
+  {
+    "id": "ibis-rouge",
+    "name": "Ibis Rouge",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volière géante",
+    "points": 1,
+    "observation": "Toute la journée ; dans les arbres ou au bord de l'eau"
+  },
+  {
+    "id": "ibis-chauve-ibis-du-cap",
+    "name": "Ibis chauve (ibis du cap)",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volière géante",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "flamant-rose",
+    "name": "Flamant Rose",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volière géante",
+    "points": 1,
+    "observation": "Toute la journée ; au bord de l'eau"
+  },
+  {
+    "id": "grue-couronnee",
+    "name": "Grue couronnée",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volière géante",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "huitrier-pie",
+    "name": "Huitrier pie",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volière géante",
+    "points": 2,
+    "observation": "Toute la journée ; au bord de l'eau"
+  },
+  {
+    "id": "heron-garde-boeuf-aigrette",
+    "name": "Héron garde-Boeuf (aigrette)",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volière géante",
+    "points": 1,
+    "observation": "Toute la journée ; dans les arbres ou au sol"
+  },
+  {
+    "id": "cariama-huppe",
+    "name": "Cariama Huppé",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volière géante",
+    "points": 2,
+    "observation": "Toute la journée ; au sol ou caché dans les coins"
+  },
+  {
+    "id": "canard-mandarin",
+    "name": "Canard Mandarin",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volière géante",
+    "points": 1,
+    "observation": "Toute la journée ; dans ou au bord de l'eau"
+  },
+  {
+    "id": "canard-pilet",
+    "name": "Canard Pilet",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volière géante",
+    "points": 2,
+    "observation": "Toute la journée ; dans ou au bord de l'eau"
+  },
+  {
+    "id": "canard-a-collier-noir",
+    "name": "Canard à collier noir",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volière géante",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "tadorne-casarca",
+    "name": "Tadorne casarca",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volière géante",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "spatule-rosee",
+    "name": "Spatule rosée",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volière géante",
+    "points": 2,
+    "observation": "Toute la journée ; dans les arbres ou au bord de l'eau"
+  },
+  {
+    "id": "savacou",
+    "name": "Savacou",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volière géante",
+    "points": 3,
+    "observation": "Toute la journée ; dans les arbres ou au bord de l'eau"
+  },
+  {
+    "id": "bernache-nene",
+    "name": "Bernache néné",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volière géante",
+    "points": 1,
+    "observation": "Toute la journée ; dans ou au bord de l'eau"
+  },
+  {
+    "id": "pintade-huppee",
+    "name": "Pintade huppée",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volière géante",
+    "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "grand-tatou-velu",
+    "name": "Grand tatou velu",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "goura-couronne",
+    "name": "Goura couronné",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "mangouste-naine",
+    "name": "Mangouste Naine",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "otocyon",
+    "name": "Otocyon",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "chien-de-prairie",
+    "name": "Chien de prairie",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "tamarin-pinche",
+    "name": "Tamarin Pinché",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "phalanger-volant",
+    "name": "Phalanger Volant",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "rat-des-nuages",
+    "name": "Rat des Nuages",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "couscous",
+    "name": "Couscous",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "grand-geocoucou",
+    "name": "Grand géocoucou",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "tamarin-lion-dore",
+    "name": "Tamarin lion doré",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "toucan",
+    "name": "Toucan",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "calao",
+    "name": "Calao",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "cacatoes-noir",
+    "name": "Cacatoès Noir",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "touraco-pauline",
+    "name": "Touraco Pauline",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "canard-a-collier-noir-2",
+    "name": "Canard à collier noir",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "tortue-geante-des-seychelles",
+    "name": "Tortue géante des Seychelles",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "perroquet-dracula",
+    "name": "Perroquet Dracula",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "calin-cacatoes-des-moluques",
+    "name": "Câlin - Cacatoès des Moluques",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volières de l'entrée",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "perroquet-gris-du-gabon",
+    "name": "Perroquet Gris du Gabon",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volières de l'entrée",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "vautour-moine",
+    "name": "Vautour Moine",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volières extérieures",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "vautour-chauve",
+    "name": "Vautour Chauve",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volières extérieures",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "condor-des-andes",
+    "name": "Condor des Andes",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volières extérieures",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "caraca",
+    "name": "Caraca",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volières extérieures",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "pygargue",
+    "name": "Pygargue",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volières extérieures",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "grand-duc",
+    "name": "Grand Duc",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volières extérieures",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "gyapete-barbu",
+    "name": "Gyapéte barbu",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volières extérieures",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "harfang-des-neiges",
+    "name": "Harfang des neiges",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volières extérieures",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "milan-royal",
+    "name": "Milan royal",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volières extérieures",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "chouette-effraie",
+    "name": "Chouette Effraie",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volières extérieures",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "manchot-du-cap",
+    "name": "Manchot du Cap",
+    "zone": "Cambron-sur-mer",
+    "location": "Autour du Phare",
+    "points": 1,
+    "observation": "Toute la journée ; bassin et plages; très bonne visibilité."
+  },
+  {
+    "id": "otarie-a-fourrure-d-afrique-du-sud",
+    "name": "Otarie à fourrure d'Afrique du Sud",
+    "zone": "Cambron-sur-mer",
+    "location": "Autour du Phare",
+    "points": 2,
+    "observation": "Toute la journée ; bassin et zones de repos."
+  },
+  {
+    "id": "phoque-commun",
+    "name": "Phoque commun",
+    "zone": "Cambron-sur-mer",
+    "location": "Autour du Phare",
+    "points": 2,
+    "observation": "Toute la journée ; alterner observation en surface et sous l’eau."
+  },
+  {
+    "id": "limande",
+    "name": "Limande",
+    "zone": "Cambron-sur-mer",
+    "location": "Aquarium",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "hippocampe",
+    "name": "Hippocampe",
+    "zone": "Cambron-sur-mer",
+    "location": "Aquarium",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "poisson-clown",
+    "name": "Poisson-Clown",
+    "zone": "Cambron-sur-mer",
+    "location": "Aquarium",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "dory",
+    "name": "Dory",
+    "zone": "",
+    "location": "Aquarium",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "poisson-scorpion",
+    "name": "Poisson-Scorpion",
+    "zone": "Cambron-sur-mer",
+    "location": "Aquarium",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "poisson-lave-vitre",
+    "name": "Poisson lave-vitre",
+    "zone": "Cambron-sur-mer",
+    "location": "Aquarium",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "crevettes",
+    "name": "Crevettes",
+    "zone": "Cambron-sur-mer",
+    "location": "Aquarium",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "etoile-de-mer",
+    "name": "Etoile de Mer",
+    "zone": "Cambron-sur-mer",
+    "location": "Aquarium",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "oursin",
+    "name": "Oursin",
+    "zone": "Cambron-sur-mer",
+    "location": "Aquarium",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "corail",
+    "name": "Corail",
+    "zone": "Cambron-sur-mer",
+    "location": "Aquarium",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "poisson-archer",
+    "name": "Poisson-Archer",
+    "zone": "Cambron-sur-mer",
+    "location": "Aquarium",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "axolotl",
+    "name": "Axolotl",
+    "zone": "Cambron-sur-mer",
+    "location": "Aquarium",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "piranha",
+    "name": "Piranha",
+    "zone": "Cambron-sur-mer",
+    "location": "Aquarium",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "pacu",
+    "name": "Pacu",
+    "zone": "Cambron-sur-mer",
+    "location": "Aquarium",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "poisson-chat",
+    "name": "Poisson-Chat",
+    "zone": "Cambron-sur-mer",
+    "location": "Aquarium",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "varan-de-komodo",
+    "name": "Varan de Komodo",
+    "zone": "Edenya",
+    "location": "",
+    "points": 1,
+    "observation": "Milieu de journée si température favorable ; chercher au sol; près des rochers et zones chauffées."
+  },
+  {
+    "id": "gavial",
+    "name": "Gavial",
+    "zone": "Edenya",
+    "location": "",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "suricate",
+    "name": "Suricate",
+    "zone": "Edenya",
+    "location": "",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "hippopotame-nain",
+    "name": "Hippopotame nain",
+    "zone": "Edenya",
+    "location": "",
+    "points": 2,
+    "observation": "Fin de journée idéale ; chercher près de l’eau; dans les zones ombragées et sous la végétation."
+  },
+  {
+    "id": "potamochere",
+    "name": "Potamochère",
+    "zone": "Edenya",
+    "location": "",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "loutre-geante",
+    "name": "Loutre Géante",
+    "zone": "Edenya",
+    "location": "",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "drill",
+    "name": "Drill",
+    "zone": "Edenya",
+    "location": "",
+    "points": 1,
+    "observation": "Journée ; observer les îlots et les zones arborées depuis plusieurs angles."
+  },
+  {
+    "id": "alligator",
+    "name": "Alligator",
+    "zone": "Edenya",
+    "location": "",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "echasse-d-amerique",
+    "name": "Echasse d'Amérique",
+    "zone": "Edenya",
+    "location": "",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "crabe-vampire",
+    "name": "Crabe Vampire",
+    "zone": "Edenya",
+    "location": "",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "tortue-caouanne",
+    "name": "Tortue caouanne",
+    "zone": "Edenya",
+    "location": "Dans le bassin",
+    "points": 2,
+    "observation": "Toute la journée ; meilleures chances depuis les grandes baies subaquatiques."
+  },
+  {
+    "id": "lamantin",
+    "name": "Lamantin",
+    "zone": "Edenya",
+    "location": "Dans le bassin",
+    "points": 2,
+    "observation": "Toute la journée ; meilleures chances depuis les grandes vitres subaquatiques; surtout lorsqu’ils se nourrissent."
+  },
+  {
+    "id": "tortue-terrestre-geante",
+    "name": "Tortue terrestre Géante",
+    "zone": "Edenya",
+    "location": "",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "murene",
+    "name": "Murène",
+    "zone": "Edenya",
+    "location": "Dans le bassin",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "fourmilier-geant",
+    "name": "Fourmilier géant",
+    "zone": "Edenya",
+    "location": "",
+    "points": 2,
+    "observation": "Matin ou fin de journée ; chercher dans les zones ouvertes et le long des sentiers de l’enclos."
+  },
+  {
+    "id": "tapir",
+    "name": "Tapir",
+    "zone": "Edenya",
+    "location": "",
+    "points": 2,
+    "observation": "Matin ou fin de journée ; scruter les berges; zones ombragées et passages entre végétation et eau."
+  },
+  {
+    "id": "capybara",
+    "name": "Capybara",
+    "zone": "Edenya",
+    "location": "",
+    "points": 1,
+    "observation": "Toute la journée; surtout près de l’eau et dans les zones ouvertes."
+  },
+  {
+    "id": "singe-araignee",
+    "name": "Singe-Araignée",
+    "zone": "Edenya",
+    "location": "",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "cercopitheque-de-brazza",
+    "name": "Cercopithèque de Brazza",
+    "zone": "Edenya",
+    "location": "",
+    "points": 2,
+    "observation": "Journée ; regarder en hauteur et sur les îlots arborés."
+  },
+  {
+    "id": "cameleon-de-parson",
+    "name": "Caméléon de Parson",
+    "zone": "Edenya",
+    "location": "",
+    "points": 2,
+    "observation": "Journée ; inspection attentive de la végétation; surtout branches à hauteur moyenne."
+  },
+  {
+    "id": "paresseux",
+    "name": "Paresseux",
+    "zone": "Edenya",
+    "location": "",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "iguane",
+    "name": "Iguane",
+    "zone": "Edenya",
+    "location": "",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "chauve-souris-2",
+    "name": "Chauve-souris",
+    "zone": "Edenya",
+    "location": "",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "coati",
+    "name": "Coati",
+    "zone": "Edenya",
+    "location": "",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "touraco-pauline-2",
+    "name": "Touraco Pauline",
+    "zone": "Edenya",
+    "location": "",
+    "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "rollier-a-ventre-bleu",
+    "name": "Rollier à ventre bleu",
+    "zone": "Edenya",
+    "location": "",
+    "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "lemurien-maki-catta",
+    "name": "Lémurien (maki catta)",
+    "zone": "Edenya",
+    "location": "",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "fennec",
+    "name": "Fennec",
+    "zone": "Edenya",
+    "location": "",
+    "points": 2,
+    "observation": "Début/fin de journée ; chercher près des terriers et zones sableuses."
   },
   {
     "id": "fossa",
     "name": "Fossa",
     "zone": "Edenya",
-    "location": "Zone des carnivores",
-    "points": 3,
-    "observation": "Animal discret : privilégier le début ou la fin de journée et inspecter les zones en hauteur."
+    "location": "",
+    "points": 1,
+    "observation": "Début/fin de journée ; animal discret; souvent caché ou au repos."
   },
   {
-    "id": "wombat",
-    "name": "Wombat",
-    "zone": "Le Cap Austral",
-    "location": "Secteur australien",
+    "id": "tarsier",
+    "name": "Tarsier",
+    "zone": "Edenya",
+    "location": "",
     "points": 3,
-    "observation": "Meilleures chances lorsqu'il est actif ; regarder près des terriers et des zones ombragées."
+    "observation": "Zones sombres ; meilleures chances en fin de journée; chercher patiemment dans les branches."
+  },
+  {
+    "id": "singe-ecureuil",
+    "name": "Singe-écureuil",
+    "zone": "Edenya",
+    "location": "Autour du ponton",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "conure-doree",
+    "name": "Conure Dorée",
+    "zone": "Edenya",
+    "location": "Autour du ponton",
+    "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "nephile-doree",
+    "name": "Néphile Dorée",
+    "zone": "Edenya",
+    "location": "Autour du ponton",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "mandarin",
+    "name": "Mandarin",
+    "zone": "Edenya",
+    "location": "Volière aux papillons",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "morpho-bleu",
+    "name": "Morpho Bleu",
+    "zone": "Edenya",
+    "location": "Volière aux papillons",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "jaguar-balam",
+    "name": "Jaguar (Balam)",
+    "zone": "Edenya",
+    "location": "",
+    "points": 2,
+    "observation": "Plutôt en journée ; vérifier les zones hautes; au bord de l’eau et revenir si l’animal est couché hors vue."
+  },
+  {
+    "id": "elan",
+    "name": "Elan",
+    "zone": "La Dernière Frontière",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "dindon",
+    "name": "Dindon",
+    "zone": "La Dernière Frontière",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "wapiti",
+    "name": "Wapiti",
+    "zone": "La Dernière Frontière",
+    "location": "Extérieur",
+    "points": 3,
+    "observation": "Toute la journée ; grand animal dans les zones ouvertes."
+  },
+  {
+    "id": "ours-brun",
+    "name": "Ours brun",
+    "zone": "La Dernière Frontière",
+    "location": "Extérieur",
+    "points": 1,
+    "observation": "Journée ; grands enclos; bonne visibilité mais possibilité de retrait."
+  },
+  {
+    "id": "loup-gris",
+    "name": "Loup gris",
+    "zone": "La Dernière Frontière",
+    "location": "Extérieur",
+    "points": 1,
+    "observation": "Matin/fin de journée ; observer les lisières et zones ouvertes; revenir si nécessaire."
   },
   {
     "id": "ours-noir",
     "name": "Ours noir",
     "zone": "La Dernière Frontière",
-    "location": "Territoire des ours",
-    "points": 2,
-    "observation": "Observer le sol, les structures et les zones ombragées depuis plusieurs points de vue."
+    "location": "Extérieur",
+    "points": 1,
+    "observation": "Journée ; inspecter sol; arbres et zones ombragées."
   },
   {
-    "id": "elephant-asie",
+    "id": "otarie-de-steller",
+    "name": "Otarie de Steller",
+    "zone": "La Dernière Frontière",
+    "location": "Extérieur",
+    "points": 1,
+    "observation": "Toute la journée ; bassin; très bonne visibilité."
+  },
+  {
+    "id": "puma",
+    "name": "Puma",
+    "zone": "La Dernière Frontière",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": "Matin/fin de journée ; très discret; vérifier les hauteurs et zones ombragées."
+  },
+  {
+    "id": "castor",
+    "name": "Castor",
+    "zone": "La Dernière Frontière",
+    "location": "Extérieur",
+    "points": 3,
+    "observation": "Début/fin de journée ; chercher près de l’eau; terriers et berges."
+  },
+  {
+    "id": "daim-2",
+    "name": "Daim",
+    "zone": "La Dernière Frontière",
+    "location": "Extérieur",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "buffle-du-cap",
+    "name": "Buffle du Cap",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 1,
+    "observation": "Toute la journée ; groupe visible en terrain ouvert."
+  },
+  {
+    "id": "girafe",
+    "name": "Girafe",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 1,
+    "observation": "Toute la journée ; très grande visibilité dans la savane."
+  },
+  {
+    "id": "autruche",
+    "name": "Autruche",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "watussi",
+    "name": "Watussi",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "grand-koudou",
+    "name": "Grand koudou",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "suricate-2",
+    "name": "Suricate",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "porc-epic-du-cap",
+    "name": "Porc-épic du cap",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "gorille-des-plaines-de-l-ouest",
+    "name": "Gorille des plaines de l'Ouest",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 1,
+    "observation": "Journée ; vérifier les îles; zones ombragées et abris."
+  },
+  {
+    "id": "guepard",
+    "name": "Guépard",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": "Matin ou fin de journée ; inspecter zones ouvertes et reliefs."
+  },
+  {
+    "id": "gorille-des-plaines",
+    "name": "Gorille des plaines",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "colobe",
+    "name": "Colobe",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "mangabey-noir",
+    "name": "Mangabey Noir",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "maki-catta",
+    "name": "Maki Catta",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "maki-vari-roux",
+    "name": "Maki Vari Roux",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "maki-vari-noir-et-blanc",
+    "name": "Maki Vari Noir et Blanc",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "hippopotame",
+    "name": "Hippopotame",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 1,
+    "observation": "Toute la journée ; souvent visible dans l’eau; surtout par temps doux ou chaud."
+  },
+  {
+    "id": "rhinoceros-blanc",
+    "name": "Rhinocéros blanc",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 1,
+    "observation": "Toute la journée ; grand animal en espace ouvert."
+  },
+  {
+    "id": "lion-d-afrique",
+    "name": "Lion d'Afrique",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 1,
+    "observation": "Matin ou fin de journée ; chercher aux points ombragés et zones de repos."
+  },
+  {
+    "id": "hyene",
+    "name": "Hyène",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "marabout-d-afrique",
+    "name": "Marabout d'Afrique",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "sitatunga",
+    "name": "Sitatunga",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "serval",
+    "name": "Serval",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "oryx-algazelle",
+    "name": "Oryx algazelle",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 1,
+    "observation": "Toute la journée ; terrain ouvert; bonne visibilité."
+  },
+  {
+    "id": "zebre",
+    "name": "Zèbre",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 1,
+    "observation": "Toute la journée ; terrain ouvert; bonne visibilité."
+  },
+  {
+    "id": "gnou",
+    "name": "Gnou",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "bec-en-sabot",
+    "name": "Bec-en-Sabot",
+    "zone": "La Terre des Origines",
+    "location": "Mersus Emergo",
+    "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "tortue-mata-mata",
+    "name": "Tortue Mata mata",
+    "zone": "La Terre des Origines",
+    "location": "Mersus Emergo",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "dendrobate",
+    "name": "Dendrobate",
+    "zone": "La Terre des Origines",
+    "location": "Mersus Emergo",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "pogona",
+    "name": "Pogona",
+    "zone": "La Terre des Origines",
+    "location": "Mersus Emergo",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "gecko-de-madagascar",
+    "name": "Gecko de Madagascar",
+    "zone": "La Terre des Origines",
+    "location": "Mersus Emergo",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "cameleon",
+    "name": "Caméléon",
+    "zone": "La Terre des Origines",
+    "location": "Mersus Emergo",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "python",
+    "name": "Python",
+    "zone": "La Terre des Origines",
+    "location": "Mersus Emergo",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "serpent-des-bles",
+    "name": "Serpent des blés",
+    "zone": "La Terre des Origines",
+    "location": "Mersus Emergo",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "cobra",
+    "name": "Cobra",
+    "zone": "La Terre des Origines",
+    "location": "Mersus Emergo",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "dragon-d-eau",
+    "name": "Dragon d'eau",
+    "zone": "La Terre des Origines",
+    "location": "Mersus Emergo",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "crocodile-nain",
+    "name": "Crocodile Nain",
+    "zone": "La Terre des Origines",
+    "location": "Mersus Emergo",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "tortue-crepe",
+    "name": "Tortue crèpe",
+    "zone": "La Terre des Origines",
+    "location": "Mersus Emergo",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "mygale",
+    "name": "Mygale",
+    "zone": "La Terre des Origines",
+    "location": "Mersus Emergo",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "grenouille-tomate",
+    "name": "Grenouille tomate",
+    "zone": "La Terre des Origines",
+    "location": "Mersus Emergo",
+    "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "cordyle-epineux",
+    "name": "Cordyle Epineux",
+    "zone": "La Terre des Origines",
+    "location": "Mersus Emergo",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "iguane-vert",
+    "name": "Iguane vert",
+    "zone": "La Terre des Origines",
+    "location": "Mersus Emergo",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "iguane-orange",
+    "name": "Iguane Orange",
+    "zone": "La Terre des Origines",
+    "location": "Mersus Emergo",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "varan",
+    "name": "Varan",
+    "zone": "La Terre des Origines",
+    "location": "Mersus Emergo",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "boeuf-musque",
+    "name": "Bœuf musqué",
+    "zone": "La Terre du Froid",
+    "location": "",
+    "points": 1,
+    "observation": "Toute la journée ; terrain ouvert; généralement facile à repérer."
+  },
+  {
+    "id": "gorfou-sauteur",
+    "name": "Gorfou sauteur",
+    "zone": "La Terre du Froid",
+    "location": "",
+    "points": 1,
+    "observation": "Toute la journée ; grotte aux manchots; bonne visibilité mais plus petit."
+  },
+  {
+    "id": "loup-du-canada",
+    "name": "Loup du Canada",
+    "zone": "La Terre du Froid",
+    "location": "",
+    "points": 2,
+    "observation": "Matin/fin de journée ; observer les lisières; clairières et points hauts."
+  },
+  {
+    "id": "manchot-papou",
+    "name": "Manchot papou",
+    "zone": "La Terre du Froid",
+    "location": "",
+    "points": 1,
+    "observation": "Toute la journée ; grotte aux manchots; excellente visibilité."
+  },
+  {
+    "id": "manchot-royal",
+    "name": "Manchot royal",
+    "zone": "La Terre du Froid",
+    "location": "",
+    "points": 1,
+    "observation": "Toute la journée ; grotte aux manchots; excellente visibilité."
+  },
+  {
+    "id": "morse",
+    "name": "Morse",
+    "zone": "La Terre du Froid",
+    "location": "",
+    "points": 1,
+    "observation": "Toute la journée ; très visible dans le bassin ou sur les plateformes."
+  },
+  {
+    "id": "ours-blanc",
+    "name": "Ours blanc",
+    "zone": "La Terre du Froid",
+    "location": "",
+    "points": 1,
+    "observation": "Toute la journée ; vérifier espaces terrestres et bassin; souvent bien visible."
+  },
+  {
+    "id": "raton-laveur",
+    "name": "Raton-laveur",
+    "zone": "La Terre du Froid",
+    "location": "",
+    "points": 2,
+    "observation": "Fin de journée ; animal discret et volontiers caché en journée."
+  },
+  {
+    "id": "renne",
+    "name": "Renne",
+    "zone": "La Terre du Froid",
+    "location": "",
+    "points": 2,
+    "observation": "Toute la journée ; enclos ouvert; visibilité généralement forte."
+  },
+  {
+    "id": "tigre-de-siberie",
+    "name": "Tigre de Sibérie",
+    "zone": "La Terre du Froid",
+    "location": "",
+    "points": 2,
+    "observation": "Matin/fin de journée ; chercher près des vitres; reliefs et zones ombragées."
+  },
+  {
+    "id": "casoar-a-casque",
+    "name": "Casoar à casque",
+    "zone": "Le Cap Austral",
+    "location": "",
+    "points": 1,
+    "observation": "Toute la journée ; grand oiseau mais peut rester derrière la végétation."
+  },
+  {
+    "id": "diable-de-tasmanie",
+    "name": "Diable de Tasmanie",
+    "zone": "Le Cap Austral",
+    "location": "",
+    "points": 3,
+    "observation": "Matin/fin de journée ; animal souvent caché ou au repos en journée."
+  },
+  {
+    "id": "kangourou-roux",
+    "name": "Kangourou roux",
+    "zone": "Le Cap Austral",
+    "location": "",
+    "points": 1,
+    "observation": "Toute la journée ; grands espaces ouverts; souvent en groupe."
+  },
+  {
+    "id": "koala",
+    "name": "Koala",
+    "zone": "Le Cap Austral",
+    "location": "Côté Koala",
+    "points": 2,
+    "observation": "Toute la journée ; chercher méthodiquement dans les eucalyptus; souvent immobile."
+  },
+  {
+    "id": "potoroo",
+    "name": "Potoroo",
+    "zone": "Le Cap Austral",
+    "location": "Côté Koala",
+    "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "kangourou-rat",
+    "name": "Kangourou-rat",
+    "zone": "Le Cap Austral",
+    "location": "Côté Koala",
+    "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "wallaby-a-raies-blanches",
+    "name": "Wallaby à raies blanches",
+    "zone": "Le Cap Austral",
+    "location": "Côté Koala",
+    "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "loriquet-arc-en-ciel",
+    "name": "Loriquet arc-en-ciel",
+    "zone": "Le Cap Austral",
+    "location": "Volière",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "perruche",
+    "name": "Perruche",
+    "zone": "Le Cap Austral",
+    "location": "Volière",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "kookaburra",
+    "name": "Kookaburra",
+    "zone": "Le Cap Austral",
+    "location": "Volière",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "wallaby-bicolore",
+    "name": "Wallaby bicolore",
+    "zone": "Le Cap Austral",
+    "location": "",
+    "points": 2,
+    "observation": "Matin ou fin de journée ; chercher sous la végétation et zones ombragées."
+  },
+  {
+    "id": "wombat",
+    "name": "Wombat",
+    "zone": "Le Cap Austral",
+    "location": "",
+    "points": 3,
+    "observation": "Matin/fin de journée ; rechercher près des terriers et zones ombragées."
+  },
+  {
+    "id": "echidne",
+    "name": "Échidné",
+    "zone": "Le Cap Austral",
+    "location": "",
+    "points": 3,
+    "observation": "Matin/fin de journée ; discret; bas au sol et souvent caché."
+  },
+  {
+    "id": "emeu",
+    "name": "Émeu",
+    "zone": "Le Cap Austral",
+    "location": "",
+    "points": 1,
+    "observation": "Toute la journée ; grand oiseau terrestre très visible."
+  },
+  {
+    "id": "gibbon-a-joues-jaunes",
+    "name": "Gibbon à joues jaunes",
+    "zone": "Le Royaume de Ganesha",
+    "location": "",
+    "points": 1,
+    "observation": "Matin surtout ; écouter les vocalises et regarder les structures hautes."
+  },
+  {
+    "id": "loutre-asiatique",
+    "name": "Loutre asiatique",
+    "zone": "Le Royaume de Ganesha",
+    "location": "",
+    "points": 2,
+    "observation": "Matin et périodes de nourrissage ; surveiller eau; berges et cachettes."
+  },
+  {
+    "id": "macaque-a-crete",
+    "name": "Macaque à crête",
+    "zone": "Le Royaume de Ganesha",
+    "location": "",
+    "points": 1,
+    "observation": "Journée ; groupe généralement visible dans les structures et au sol."
+  },
+  {
+    "id": "porc-epic",
+    "name": "Porc-épic",
+    "zone": "Le Royaume de Ganesha",
+    "location": "",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "orang-outan-de-sumatra",
+    "name": "Orang-outan de Sumatra",
+    "zone": "Le Royaume de Ganesha",
+    "location": "",
+    "points": 1,
+    "observation": "Journée ; vérifier intérieur; extérieur et structures en hauteur."
+  },
+  {
+    "id": "panthere-noire",
+    "name": "Panthère noire",
+    "zone": "Le Royaume de Ganesha",
+    "location": "",
+    "points": 2,
+    "observation": "Matin/fin de journée ; chercher dans les zones ombragées et en hauteur."
+  },
+  {
+    "id": "sanglier-des-visayas",
+    "name": "Sanglier des Visayas",
+    "zone": "Le Royaume de Ganesha",
+    "location": "",
+    "points": 2,
+    "observation": "Matin ou fin de journée ; chercher dans la végétation et les zones ombragées."
+  },
+  {
+    "id": "saimiri-de-bolivie",
+    "name": "Saïmiri de Bolivie",
+    "zone": "Le Royaume de Ganesha",
+    "location": "",
+    "points": 1,
+    "observation": "Journée ; observer branches et déplacements rapides du groupe."
+  },
+  {
+    "id": "tigre-blanc-royal",
+    "name": "Tigre blanc royal",
+    "zone": "Le Royaume de Ganesha",
+    "location": "",
+    "points": 2,
+    "observation": "Matin ou fin de journée ; faire plusieurs points de vue; chercher zones ombragées."
+  },
+  {
+    "id": "elephant-d-asie",
     "name": "Éléphant d'Asie",
     "zone": "Le Royaume de Ganesha",
-    "location": "Plaine des éléphants",
+    "location": "",
     "points": 1,
-    "observation": "Grand animal généralement visible dans les espaces extérieurs."
+    "observation": "Toute la journée ; grands espaces; très forte visibilité."
+  },
+  {
+    "id": "langur-de-francois",
+    "name": "Langur de François",
+    "zone": "Le Royaume du Milieu",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": "Journée ; chercher dans les structures et branches en hauteur."
+  },
+  {
+    "id": "macaque-japonais",
+    "name": "Macaque japonais",
+    "zone": "Le Royaume du Milieu",
+    "location": "Extérieur",
+    "points": 1,
+    "observation": "Toute la journée ; groupe généralement visible; notamment autour des structures et points d’eau."
+  },
+  {
+    "id": "ours-a-collier",
+    "name": "Ours à collier",
+    "zone": "Le Royaume du Milieu",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": "Matin ou fin de journée ; inspecter zones ombragées et hauteurs."
+  },
+  {
+    "id": "panda-geant",
+    "name": "Panda géant",
+    "zone": "Le Royaume du Milieu",
+    "location": "Extérieur",
+    "points": 1,
+    "observation": "Toute la journée; avec avantage aux heures de repas ; vérifier intérieur et extérieur."
+  },
+  {
+    "id": "singe-dore",
+    "name": "Singe Doré",
+    "zone": "Le Royaume du Milieu",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "loutre-a-pelage-lisse",
+    "name": "Loutre à pelage lisse",
+    "zone": "Le Royaume du Milieu",
+    "location": "Extérieur",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "binturong",
+    "name": "Binturong",
+    "zone": "Le Royaume du Milieu",
+    "location": "Extérieur",
+    "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "panthere-des-neiges",
+    "name": "Panthère des Neiges",
+    "zone": "Le Royaume du Milieu",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "cerf-du-pere-david",
+    "name": "Cerf du père David",
+    "zone": "Le Royaume du Milieu",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "grue-a-cou-blanc",
+    "name": "Grue à cou Blanc",
+    "zone": "Le Royaume du Milieu",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "cerf-cochon",
+    "name": "Cerf-cochon",
+    "zone": "Le Royaume du Milieu",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "muntjac",
+    "name": "Muntjac",
+    "zone": "Le Royaume du Milieu",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "carpe-koi",
+    "name": "Carpe Koï",
+    "zone": "Le Royaume du Milieu",
+    "location": "Extérieur",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "panda-roux",
+    "name": "Panda roux",
+    "zone": "Le Royaume du Milieu",
+    "location": "Extérieur",
+    "points": 1,
+    "observation": "Matin ou temps frais ; regarder dans les arbres et plateformes élevées."
+  },
+  {
+    "id": "takin-dore",
+    "name": "Takin doré",
+    "zone": "Le Royaume du Milieu",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": "Toute la journée ; enclos assez ouvert; surtout facile si le groupe est actif."
+  },
+  {
+    "id": "paresseux-a-deux-doigt",
+    "name": "Paresseux à deux doigt",
+    "zone": "Le Royaume du Milieu",
+    "location": "Tropicalia",
+    "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "paradisier",
+    "name": "Paradisier",
+    "zone": "Le Royaume du Milieu",
+    "location": "Tropicalia",
+    "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "roulroul-couronne",
+    "name": "Roulroul couronné",
+    "zone": "Le Royaume du Milieu",
+    "location": "Tropicalia",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "rollier-a-ventre-bleu-2",
+    "name": "Rollier à ventre bleu",
+    "zone": "Le Royaume du Milieu",
+    "location": "Tropicalia",
+    "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "gallicombe",
+    "name": "Gallicombe",
+    "zone": "Le Royaume du Milieu",
+    "location": "Tropicalia",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "colombine-lumachelle",
+    "name": "Colombine lumachelle",
+    "zone": "Le Royaume du Milieu",
+    "location": "Tropicalia",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "martin-triste",
+    "name": "Martin triste",
+    "zone": "Le Royaume du Milieu",
+    "location": "Tropicalia",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "echasse-blanche",
+    "name": "Echasse blanche",
+    "zone": "Le Royaume du Milieu",
+    "location": "Tropicalia",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "nicobar-a-camail",
+    "name": "Nicobar à camail",
+    "zone": "Le Royaume du Milieu",
+    "location": "Tropicalia",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "faisan-argus-geant",
+    "name": "Faisan Argus géant",
+    "zone": "Le Royaume du Milieu",
+    "location": "Tropicalia",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "zosterops-du-kilimandjaro",
+    "name": "Zostérops du Kilimandjaro",
+    "zone": "Le Royaume du Milieu",
+    "location": "Tropicalia",
+    "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "aracari-de-beauharnais",
+    "name": "Araçari de Beauharnais",
+    "zone": "Le Royaume du Milieu",
+    "location": "Tropicalia",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "aracari-vert",
+    "name": "Araçari vert",
+    "zone": "Le Royaume du Milieu",
+    "location": "Tropicalia",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "renard-volant-de-lyle",
+    "name": "Renard volant de Lylé",
+    "zone": "Le Royaume du Milieu",
+    "location": "Tropicalia",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "civette-palmiste",
+    "name": "Civette Palmiste",
+    "zone": "Le Royaume du Milieu",
+    "location": "Tropicalia",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "esturgeon",
+    "name": "Esturgeon",
+    "zone": "Le Royaume du Milieu",
+    "location": "Tropicalia",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "carpe-koi-2",
+    "name": "Carpe Koï",
+    "zone": "Le Royaume du Milieu",
+    "location": "Tropicalia",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "alligator-de-chine",
+    "name": "Alligator de Chine",
+    "zone": "Le Royaume du Milieu",
+    "location": "Tropicalia",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "buffle-d-eau",
+    "name": "Buffle d'eau",
+    "zone": "Les Îles du Soleil Levant",
+    "location": "",
+    "points": 1,
+    "observation": "Toute la journée ; grand animal en espace ouvert."
+  },
+  {
+    "id": "cerf-sika",
+    "name": "Cerf sika",
+    "zone": "Les Îles du Soleil Levant",
+    "location": "",
+    "points": 1,
+    "observation": "Toute la journée ; zones ouvertes et boisées; généralement visible."
+  },
+  {
+    "id": "chien-viverrin",
+    "name": "Chien viverrin",
+    "zone": "Les Îles du Soleil Levant",
+    "location": "",
+    "points": 2,
+    "observation": "Début/fin de journée ; discret; chercher près des abris et sous-bois."
+  },
+  {
+    "id": "grue-du-japon",
+    "name": "Grue du Japon",
+    "zone": "Les Îles du Soleil Levant",
+    "location": "",
+    "points": 1,
+    "observation": "Toute la journée ; grand oiseau; espace dégagé."
+  },
+  {
+    "id": "macaque-japonais-2",
+    "name": "Macaque japonais",
+    "zone": "Les Îles du Soleil Levant",
+    "location": "",
+    "points": 2,
+    "observation": "Toute la journée ; groupe généralement visible."
+  },
+  {
+    "id": "siamang",
+    "name": "Siamang",
+    "zone": "Les Îles du Soleil Levant",
+    "location": "",
+    "points": 2,
+    "observation": "Matin surtout ; écouter les vocalises et regarder les structures hautes."
+  },
+  {
+    "id": "polatouche",
+    "name": "Polatouche",
+    "zone": "Les Îles du Soleil Levant",
+    "location": "",
+    "points": 3,
+    "observation": ""
   }
 ]
