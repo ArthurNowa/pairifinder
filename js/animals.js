@@ -15,7 +15,7 @@ export function getAnimal(animals, id) {
 export function filterAnimals(animals, { query = '', zone = '', points = '' } = {}) {
   const q = query.trim().toLocaleLowerCase('fr');
   return animals.filter(animal => {
-    const haystack = `${animal.name} ${animal.zone} ${animal.location} ${animal.observation || ''}`.toLocaleLowerCase('fr');
+    const haystack = `${animal.name} ${animal.zone} ${animal.location}`.toLocaleLowerCase('fr');
     return (!q || haystack.includes(q)) &&
       (!zone || animal.zone === zone) &&
       (!points || animal.points === Number(points));
