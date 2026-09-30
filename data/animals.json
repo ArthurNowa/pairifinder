@@ -320,14 +320,6 @@
     "observation": ""
   },
   {
-    "id": "huitrier-pie",
-    "name": "Huitrier pie",
-    "zone": "Cambron l'Abbaye",
-    "location": "Volière géante",
-    "points": 2,
-    "observation": "Toute la journée ; au bord de l'eau"
-  },
-  {
     "id": "heron-garde-boeuf-aigrette",
     "name": "Héron garde-Boeuf (aigrette)",
     "zone": "Cambron l'Abbaye",
@@ -640,11 +632,11 @@
     "observation": ""
   },
   {
-    "id": "chouette-effraie",
-    "name": "Chouette Effraie",
+    "id": "chevêche-d-athena",
+    "name": "Chevêche d'Athena",
     "zone": "Cambron l'Abbaye",
     "location": "Volières extérieures",
-    "points": 1,
+    "points": 2,
     "observation": ""
   },
   {
