@@ -465,11 +465,19 @@
   },
   {
     "id": "couscous",
-    "name": "Couscous",
+    "name": "Couscous des Célèbes",
     "zone": "Cambron l'Abbaye",
     "location": "L'Oasis",
     "points": 2,
     "observation": ""
+  },
+  {
+    "id": "petit-kanchil-de-java",
+    "name": "Petit Kanchil de Java",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 3,
+    "observation": "Au sol, dans l'enclos du couscous des Célèbes"
   },
   {
     "id": "grand-geocoucou",
@@ -477,6 +485,14 @@
     "zone": "Cambron l'Abbaye",
     "location": "L'Oasis",
     "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "mainate-religieux",
+    "name": "Mainate Religieux",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 2,
     "observation": ""
   },
   {
@@ -512,11 +528,27 @@
     "observation": ""
   },
   {
+    "id": "amazone-vineuse",
+    "name": "Amazone Vineuse",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 2,
+    "observation": ""
+  },
+  {
     "id": "touraco-pauline",
     "name": "Touraco Pauline",
     "zone": "Cambron l'Abbaye",
     "location": "L'Oasis",
     "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "agouti",
+    "name": "Agouti",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 1,
     "observation": ""
   },
   {
@@ -544,7 +576,15 @@
     "observation": ""
   },
   {
-    "id": "calin-cacatoes-des-moluques",
+    "id": "moineau-de-java",
+    "name": "Moineau de Java",
+    "zone": "Cambron l'Abbaye",
+    "location": "L'Oasis",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "cacatoes-des-moluques",
     "name": "Câlin - Cacatoès des Moluques",
     "zone": "Cambron l'Abbaye",
     "location": "Volières de l'entrée",
@@ -557,6 +597,14 @@
     "zone": "Cambron l'Abbaye",
     "location": "Volières de l'entrée",
     "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "grand-eclectus",
+    "name": "Grand Eclectus",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volières de l'entrée",
+    "points": 3,
     "observation": ""
   },
   {
@@ -581,6 +629,22 @@
     "zone": "Cambron l'Abbaye",
     "location": "Volières extérieures",
     "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "vigogne",
+    "name": "Vigogne",
+    "zone": "Cambron l'Abbaye",
+    "location": "En face des rapaces",
+    "points": 1,
+    "observation": ""
+  },
+  {
+    "id": "mara-de-patagonie",
+    "name": "Mara de Patagonie",
+    "zone": "Cambron l'Abbaye",
+    "location": "En face des rapaces",
+    "points": 2,
     "observation": ""
   },
   {
@@ -1320,6 +1384,14 @@
     "observation": ""
   },
   {
+    "id": "tortue-sillonnee",
+    "name": "Tortue Sillonnée",
+    "zone": "La Terre des Origines",
+    "location": "Extérieur",
+    "points": 2,
+    "observation": ""
+  },
+  {
     "id": "serval",
     "name": "Serval",
     "zone": "La Terre des Origines",
@@ -1516,7 +1588,7 @@
     "name": "Loup du Canada",
     "zone": "La Terre du Froid",
     "location": "",
-    "points": 2,
+    "points": 3,
     "observation": "Matin/fin de journée ; observer les lisières; clairières et points hauts."
   },
   {
@@ -1558,6 +1630,14 @@
     "location": "",
     "points": 2,
     "observation": "Fin de journée ; animal discret et volontiers caché en journée."
+  },
+  {
+    "id": "mouffette",
+    "name": "Mouffette",
+    "zone": "La Terre du Froid",
+    "location": "",
+    "points": 2,
+    "observation": "Cohabite avec les ratons laveurs."
   },
   {
     "id": "renne",
@@ -1650,6 +1730,22 @@
   {
     "id": "kookaburra",
     "name": "Kookaburra",
+    "zone": "Le Cap Austral",
+    "location": "Volière",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "oedicneme-bride",
+    "name": "Oedicnème bridé",
+    "zone": "Le Cap Austral",
+    "location": "Volière",
+    "points": 2,
+    "observation": ""
+  },
+  {
+    "id": "aigrette-a-face-blanche",
+    "name": "Aigrette à face blanche",
     "zone": "Le Cap Austral",
     "location": "Volière",
     "points": 2,
@@ -1912,11 +2008,19 @@
     "observation": ""
   },
   {
-    "id": "rollier-a-ventre-bleu-2",
+    "id": "rollier-a-ventre-bleu",
     "name": "Rollier à ventre bleu",
     "zone": "Le Royaume du Milieu",
     "location": "Tropicalia",
     "points": 3,
+    "observation": ""
+  },
+  {
+    "id": "vanneau-soldat",
+    "name": "Vanneau Soldat",
+    "zone": "Le Royaume du Milieu",
+    "location": "Tropicalia",
+    "points": 2,
     "observation": ""
   },
   {
