@@ -16,6 +16,7 @@ IMAGES_DATA = set()
 
 ALL_NEEDED_IMAGES = set()
 
+COMPLETE_IMAGES = set()
 MISSING_IMAGES = set()
 IMAGES_TO_FIX = set()
 
@@ -56,7 +57,7 @@ def find_images_by_id (animal_id):
 
     
 def check_images_in_json (animal_id, animal_image):
-    global MISSING_IMAGES, IMAGES_TO_FIX
+    global MISSING_IMAGES, IMAGES_TO_FIX, IMAGES_DATA
     assert type(animal_id) == str, "/!\\ Erreur de clé avec l'animal_id {}".format(animal_id)
     assert type(animal_image) == str, "/!\\ Erreur d'image avec l'animal_id {}".format(animal_id)
 
@@ -68,6 +69,8 @@ def check_images_in_json (animal_id, animal_image):
         IMAGES_TO_FIX.add(animal_id)
     elif res[0] != animal_image:
         IMAGES_TO_FIX.add(animal_id)
+    else:
+        COMPLETE_IMAGES.add(animal_id)
             
 
 
@@ -94,7 +97,12 @@ def rename_photos ():
         
         new_filename = name.strip("0123456789_-") + "." + ext
         print(filename, new_filename)
-        os.rename(IMAGES_DIR.joinpath(filename), IMAGES_DIR.joinpath(new_filename))
+        filepath = IMAGES_DIR.joinpath(filename)
+        try:
+            os.rename(filepath, IMAGES_DIR.joinpath(new_filename))
+        except FileExistsError:
+            os.remove(filepath)
+        
 
 
 
@@ -112,8 +120,8 @@ def register_data():
             # register "image" data if not already there
             if "image" not in animal_data.keys():
                 animal_data["image"] = animal_id + ".jpg"
-            ALL_NEEDED_IMAGES.add(animal_data["image"])
-            
+
+
     DATA_LIST = file_data
     # write missing data
     if file_data != None:
@@ -151,3 +159,10 @@ if __name__ == "__main__":
         print("Les images suivantes ne correspondent pas aux données (mauvaise extension ou plusieurs images trouvées) :")
         print(IMAGES_TO_FIX)
         print()
+    
+    nb_animals = len(DATA_LIST)
+    print("=================================")
+    print(" - Images OK : {}/{}".format(len(COMPLETE_IMAGES), nb_animals))
+    print(" - Images Manquantes : {}/{}".format(len(MISSING_IMAGES), nb_animals))
+    print(" - Images à Fix : {}/{}".format(len(IMAGES_TO_FIX), nb_animals))
+    print("=================================")

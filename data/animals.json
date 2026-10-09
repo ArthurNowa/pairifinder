@@ -18,22 +18,22 @@
     "image": "paon-blanc.jpg"
   },
   {
-    "id": "cigogne",
-    "name": "Cigogne",
+    "id": "cigogne-blanche",
+    "name": "Cigogne Blanche",
     "zone": "Partout",
     "location": "En hauteur",
     "points": 1,
     "observation": "Toute la journée ; dans les nids en hauteur ou sur les toits",
-    "image": "cigogne.jpg"
+    "image": "cigogne-blanche.jpg"
   },
   {
-    "id": "heron",
-    "name": "Héron",
+    "id": "heron-cendre",
+    "name": "Héron Cendré",
     "zone": "Partout",
     "location": "Près des points d'eau",
     "points": 2,
     "observation": "",
-    "image": "heron.jpg"
+    "image": "heron-cendre.jpg"
   },
   {
     "id": "bernache-nonnette",
@@ -144,13 +144,13 @@
     "image": "cochon-domestique.jpg"
   },
   {
-    "id": "daim",
-    "name": "Daim",
+    "id": "daim-europeen",
+    "name": "Daim Européen",
     "zone": "Cambron l'Abbaye",
     "location": "Mini-Ferme",
     "points": 1,
     "observation": "Toute la journée ; zones de mini-ferme et espaces ouverts.",
-    "image": "daim.jpg"
+    "image": "daim-europeen.jpg"
   },
   {
     "id": "dindon-crolwitzer",
@@ -333,13 +333,13 @@
     "image": "ibis-rouge.jpg"
   },
   {
-    "id": "ibis-chauve-ibis-du-cap",
+    "id": "ibis-chauve",
     "name": "Ibis chauve (ibis du cap)",
     "zone": "Cambron l'Abbaye",
     "location": "Volière géante",
     "points": 2,
     "observation": "",
-    "image": "ibis-chauve-ibis-du-cap.jpg"
+    "image": "ibis-chauve.jpg"
   },
   {
     "id": "flamant-rose",
@@ -360,13 +360,13 @@
     "image": "grue-couronnee.jpg"
   },
   {
-    "id": "heron-garde-boeuf-aigrette",
+    "id": "heron-garde-boeuf",
     "name": "Héron garde-Boeuf (aigrette)",
     "zone": "Cambron l'Abbaye",
     "location": "Volière géante",
     "points": 1,
     "observation": "Toute la journée ; dans les arbres ou au sol",
-    "image": "heron-garde-boeuf-aigrette.jpg"
+    "image": "heron-garde-boeuf.jpg"
   },
   {
     "id": "cariama-huppe",
@@ -522,13 +522,13 @@
     "image": "rat-des-nuages.jpg"
   },
   {
-    "id": "couscous",
+    "id": "couscous-des-celebes",
     "name": "Couscous des Célèbes",
     "zone": "Cambron l'Abbaye",
     "location": "L'Oasis",
     "points": 2,
     "observation": "",
-    "image": "couscous.jpg"
+    "image": "couscous-des-celebes.jpg"
   },
   {
     "id": "petit-kanchil-de-java",
@@ -612,13 +612,13 @@
     "image": "touraco-pauline.jpg"
   },
   {
-    "id": "agouti",
-    "name": "Agouti",
+    "id": "agouti-azara",
+    "name": "Agouti Azara",
     "zone": "Cambron l'Abbaye",
     "location": "L'Oasis",
     "points": 1,
     "observation": "",
-    "image": "agouti.jpg"
+    "image": "agouti-azara.jpg"
   },
   {
     "id": "canard-a-collier-noir",
@@ -664,6 +664,15 @@
     "points": 1,
     "observation": "",
     "image": "cacatoes-des-moluques.jpg"
+  },
+  {
+    "id": "cacatoes-rosalbin",
+    "name": "Cacatoès Rosalbin",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volières de l'entrée",
+    "points": 1,
+    "observation": "",
+    "image": "cacatoes-rosalbin.jpg"
   },
   {
     "id": "perroquet-gris-du-gabon",
@@ -963,13 +972,13 @@
     "image": "varan-de-komodo.jpg"
   },
   {
-    "id": "gavial",
-    "name": "Gavial",
+    "id": "gavial-du-gange",
+    "name": "Gavial du Gange",
     "zone": "Edenya",
     "location": "",
     "points": 2,
     "observation": "",
-    "image": "gavial.jpg"
+    "image": "gavial-du-gange.jpg"
   },
   {
     "id": "suricate",
@@ -1269,13 +1278,13 @@
     "image": "morpho-bleu.jpg"
   },
   {
-    "id": "jaguar-balam",
+    "id": "jaguar",
     "name": "Jaguar (Balam)",
     "zone": "Edenya",
     "location": "",
     "points": 2,
     "observation": "Plutôt en journée ; vérifier les zones hautes; au bord de l’eau et revenir si l’animal est couché hors vue.",
-    "image": "jaguar-balam.jpg"
+    "image": "jaguar.jpg"
   },
   {
     "id": "elan",
@@ -1629,13 +1638,13 @@
     "image": "dendrobate.jpg"
   },
   {
-    "id": "pogona",
-    "name": "Pogona",
+    "id": "pogona-vitticeps",
+    "name": "Pogona Vitticeps",
     "zone": "La Terre des Origines",
     "location": "Mersus Emergo",
     "points": 1,
     "observation": "",
-    "image": "pogona.jpg"
+    "image": "pogona-vitticeps.jpg"
   },
   {
     "id": "gecko-de-madagascar",
@@ -1935,13 +1944,13 @@
     "image": "loriquet-arc-en-ciel.jpg"
   },
   {
-    "id": "perruche",
-    "name": "Perruche",
+    "id": "perruche-ondulee",
+    "name": "Perruche Ondulée",
     "zone": "Le Cap Austral",
     "location": "Volière",
     "points": 1,
     "observation": "",
-    "image": "perruche.jpg"
+    "image": "perruche-ondulee.jpg"
   },
   {
     "id": "kookaburra",
