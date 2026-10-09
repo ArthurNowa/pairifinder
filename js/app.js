@@ -133,15 +133,15 @@ function renderSelection() {
   app.innerHTML = `
     <div class="section-title"><div><h2>Choisis tes animaux</h2><p>Construis ta liste secrète de 10 cibles.</p></div><span class="counter">${game.selection.length}/10</span></div>
     <div class="progress"><span style="width:${game.selection.length*10}%"></span></div>
-    <div class="filters">${filterMarkup()}</div>
-    <div class="summary-strip"><div class="stat"><strong>${basePotential()}</strong><span>points potentiels*</span></div><div class="stat"><strong>${list.length}</strong><span>animaux affichés</span></div></div>
-    <p class="animal-meta">* avant multiplicateur du Joker</p>
+    <div class="selection-toolbar">
     <section class="selected-panel">
       <div class="selected-panel-head"><strong>Ma sélection</strong><span>${game.selection.length}/10</span></div>
       ${game.selection.length
         ? `<div class="selected-chips">${game.selection.map(id => { const a = getAnimal(animals,id); return a ? `<button class="selected-chip" data-remove-selected="${a.id}" title="Retirer ${escapeHtml(a.name)}"><span>${escapeHtml(a.name)}</span><b>${a.points} pt${a.points>1?'s':''}</b><i>×</i></button>` : ''; }).join('')}</div>`
         : '<p class="selected-empty">Aucun animal sélectionné pour le moment.</p>'}
     </section>
+      <div class="filters">${filterMarkup()}</div>
+    </div>
     <div class="animal-list">${list.map(animal => animalCard(animal, game.selection.includes(animal.id))).join('')}</div>
     <div class="stack"><button id="toJoker" class="primary full" ${game.selection.length !== 10 ? 'disabled' : ''}>Choisir mon Joker</button></div>`;
   bindFilters(renderSelection);
@@ -187,12 +187,21 @@ function renderGuesses() {
   const list = filterAnimals(animals, filters);
   app.innerHTML = `<div class="section-title"><div><h2>Prédictions</h2><p>Liste supposée de ${escapeHtml(opponent.name)}</p></div><span class="counter">${opponent.guesses.length}/5</span></div>
     <div class="filter-row">${game.opponents.map((o,i)=>`<button class="${i===opponentIndex?'primary':'ghost'}" data-opponent="${i}">${escapeHtml(o.name)}</button>`).join('')}</div>
-    <div class="filters">${filterMarkup()}</div>
+    <div class="selection-toolbar">
+      ${selectionPanel(opponent.guesses)}
+      <div class="filters">${filterMarkup()}</div>
+    </div>
     <div class="animal-list">${list.map(a=>animalCard(a,opponent.guesses.includes(a.id),opponent.jokerGuess===a.id)).join('')}</div>
     <div class="card"><h3>Joker supposé</h3><p class="animal-meta">Choisis d'abord 5 animaux, puis désigne le Joker parmi eux.</p><select id="jokerGuess" class="search"><option value="">— Joker inconnu —</option>${opponent.guesses.map(id=>{const a=getAnimal(animals,id);return `<option value="${id}" ${opponent.jokerGuess===id?'selected':''}>${escapeHtml(a.name)}</option>`}).join('')}</select></div>
     <div class="stack"><button id="finishGame" class="primary full" ${!allGuessesReady()?'disabled':''}>Voir le récapitulatif</button></div>`;
   document.querySelectorAll('[data-opponent]').forEach(btn=>btn.onclick=()=>{sessionStorage.setItem('guessOpponent',btn.dataset.opponent);renderGuesses();});
   bindFilters(renderGuesses);
+  document.querySelectorAll('[data-remove-guess]').forEach(btn => btn.onclick = () => {
+    opponent.guesses = opponent.guesses.filter(id => id !== btn.dataset.removeGuess);
+    if (!opponent.guesses.includes(opponent.jokerGuess)) opponent.jokerGuess = null;
+    saveGame(game);
+    renderGuesses();
+  });
   bindAnimalCards(id=>{const has=opponent.guesses.includes(id);if(!has&&opponent.guesses.length>=5)return showToast('5 prédictions maximum.');opponent.guesses=has?opponent.guesses.filter(x=>x!==id):[...opponent.guesses,id];if(!opponent.guesses.includes(opponent.jokerGuess))opponent.jokerGuess=null;saveGame(game);renderGuesses();});
   document.querySelector('#jokerGuess').onchange=e=>{opponent.jokerGuess=e.target.value||null;saveGame(game);renderGuesses();};
   document.querySelector('#finishGame').onclick=()=>{game.status='finished';saveGame(game);route='results';render();};
@@ -211,6 +220,39 @@ function renderResults() {
 }
 
 function resultOpponent(o,i){return `<div class="card"><h3>${escapeHtml(o.name)}</h3>${o.guesses.map(id=>{const a=getAnimal(animals,id);const checked=o.validatedGuesses.includes(id);return `<label class="score-line"><span>${escapeHtml(a?.name||id)} ${o.jokerGuess===id?'🃏':''}</span><input type="checkbox" data-correct="${id}" data-oi="${i}" ${checked?'checked':''}></label>`}).join('')}<label class="score-line"><span>Joker correctement identifié (+2 bonus)</span><input type="checkbox" data-joker-correct="${i}" ${o.jokerCorrect?'checked':''}></label></div>`;}
+
+function selectionPanel(ids) {
+  const chips = ids.map(id => {
+    const a = getAnimal(animals, id);
+    if (!a) return '';
+    return `<button type="button" class="selected-chip" data-remove-guess="${escapeHtml(id)}"
+      title="Retirer ${escapeHtml(a.name)}"><span>${escapeHtml(a.name)}</span>
+      <b>${a.points} pt${a.points > 1 ? 's' : ''}</b><i>×</i></button>`;
+  }).join('');
+  return `<section class="selected-panel">
+    <div class="selected-panel-head"><strong>Mes prédictions</strong><span>${ids.length}/5</span></div>
+    ${ids.length ? `<div class="selected-chips">${chips}</div>` :
+      '<p class="selected-empty">Aucun animal sélectionné.</p>'}
+  </section>`;
+}
+
+function animalImage(a, className = 'animal-thumb') {
+  const filename = String(a.image || '').trim();
+  if (!filename) return `<span class="${className} animal-thumb-empty" aria-hidden="true">🐾</span>`;
+  return `<img class="${className}" src="images/${encodeURIComponent(filename)}"
+    alt="" loading="lazy" decoding="async">`;
+}
+
+document.addEventListener('error', event => {
+  const img = event.target;
+  if (!(img instanceof HTMLImageElement) ||
+      (!img.classList.contains('animal-thumb') && !img.classList.contains('animal-detail-image'))) return;
+  const fallback = document.createElement('span');
+  fallback.className = `${img.className} animal-thumb-empty`;
+  fallback.textContent = '🐾';
+  fallback.setAttribute('aria-hidden', 'true');
+  img.replaceWith(fallback);
+}, true);
 
 function filterMarkup(){return `<input id="search" class="search" type="search" placeholder="🔎 Rechercher..." value="${escapeHtml(filters.query)}"><div class="filter-row"><select id="zoneFilter" class="search"><option value="">Toutes les zones</option>${zonesFrom(animals).map(z=>`<option ${filters.zone===z?'selected':''}>${escapeHtml(z)}</option>`).join('')}</select><select id="pointsFilter" class="search"><option value="">Tous les points</option><option value="1" ${filters.points==='1'?'selected':''}>1 point</option><option value="2" ${filters.points==='2'?'selected':''}>2 points</option><option value="3" ${filters.points==='3'?'selected':''}>3 points</option></select></div>`;}
 function bindFilters(callback){
@@ -231,10 +273,19 @@ function bindFilters(callback){
   z.onchange=()=>{filters.zone=z.value;callback();};
   p.onchange=()=>{filters.points=p.value;callback();};
 }
-function animalCard(a,selected=false,joker=false){return `<button class="animal-card ${selected?'selected':''}" data-animal="${a.id}"><div><div class="animal-name">${selected?'✓ ':''}${escapeHtml(a.name)} ${joker?'<span class="joker">🃏</span>':''}</div><div class="animal-meta">${escapeHtml(a.zone)} · ${escapeHtml(a.location)}</div></div><span class="points p${a.points}">${a.points} pt${a.points>1?'s':''}</span></button>`;}
+function animalCard(a, selected = false, joker = false) {
+  return `<button class="animal-card ${selected ? 'selected' : ''}" data-animal="${escapeHtml(a.id)}">
+    ${animalImage(a)}
+    <div class="animal-card-info">
+      <div class="animal-name">${selected ? '✓ ' : ''}${escapeHtml(a.name)} ${joker ? '<span class="joker">🃏</span>' : ''}</div>
+      <div class="animal-meta">${escapeHtml(a.zone)} · ${escapeHtml(a.location)}</div>
+    </div>
+    <span class="points p${a.points}">${a.points} pt${a.points > 1 ? 's' : ''}</span>
+  </button>`;
+}
 function huntCard(a){const found=game.found.includes(a.id);const score=a.points*(game.joker===a.id?3:1);return `<button class="animal-card ${found?'selected found':''}" data-found="${a.id}"><div><div class="animal-name">${found?'✓ ':''}${escapeHtml(a.name)} ${game.joker===a.id?'<span class="joker">🃏</span>':''}</div><div class="animal-meta">${escapeHtml(a.zone)} · ${escapeHtml(a.location)}</div></div><span class="points p${a.points}">${found?'+':''}${score}</span></button>`;}
 function bindAnimalCards(onClick){document.querySelectorAll('[data-animal]').forEach(card=>{card.onclick=e=>{if(e.detail===2){showAnimal(card.dataset.animal);return;}onClick(card.dataset.animal);};card.oncontextmenu=e=>{e.preventDefault();showAnimal(card.dataset.animal);};});}
-function showAnimal(id){const a=getAnimal(animals,id);if(!a)return;animalDialogContent.innerHTML=`<div class="sheet-head"><h2>${escapeHtml(a.name)}</h2><button class="icon-btn" id="closeAnimal">×</button></div><div class="detail-grid"><div class="detail-row"><small>Zone</small>${escapeHtml(a.zone)}</div><div class="detail-row"><small>Emplacement</small>${escapeHtml(a.location)}</div><div class="detail-row"><small>Barème</small>${a.points} point${a.points>1?'s':''}</div><div class="detail-row"><small>Observation</small>${escapeHtml(a.observation||'Aucune indication particulière.')}</div></div>`;animalDialog.showModal();document.querySelector('#closeAnimal').onclick=()=>animalDialog.close();}
+function showAnimal(id){const a=getAnimal(animals,id);if(!a)return;animalDialogContent.innerHTML=`<div class="sheet-head"><h2>${escapeHtml(a.name)}</h2><button class="icon-btn" id="closeAnimal">×</button></div>${animalImage(a, "animal-detail-image")}<div class="detail-grid"><div class="detail-row"><small>Zone</small>${escapeHtml(a.zone)}</div><div class="detail-row"><small>Emplacement</small>${escapeHtml(a.location)}</div><div class="detail-row"><small>Barème</small>${a.points} point${a.points>1?'s':''}</div><div class="detail-row"><small>Observation</small>${escapeHtml(a.observation||'Aucune indication particulière.')}</div></div>`;animalDialog.showModal();document.querySelector('#closeAnimal').onclick=()=>animalDialog.close();}
 function basePotential(){return game.selection.reduce((s,id)=>s+(getAnimal(animals,id)?.points||0),0);}
 function allGuessesReady(){return game.opponents.every(o=>o.guesses.length===5&&o.jokerGuess);}
 function routeForStatus(status){return ({selection:'selection',playing:'hunt',guesses:'guesses',finished:'results'})[status]||'home';}

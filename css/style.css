@@ -162,7 +162,7 @@ button { cursor: pointer; }
 .selected-panel-head span { color: var(--muted); font-size: .82rem; font-weight: 800; }
 .selected-chips { display: flex; flex-wrap: wrap; gap: 7px; }
 .selected-chip { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; max-width: 100%; padding: 6px 8px 6px 10px; border: 1px solid var(--selection-border); border-radius: 999px; background: var(--selection-bg); color: var(--text); text-align: left; }
-.selected-chip span { overflow: hidden; text-overflow: ellipsis; var(--toast-text)-space: nowrap; font-weight: 750; }
+.selected-chip span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 750; }
 .selected-chip b { flex: 0 0 auto; color: var(--selection-accent); font-size: .75rem; }
 .selected-chip i { display: grid; place-items: center; flex: 0 0 auto; width: 21px; height: 21px; border-radius: 50%; background: var(--selection-soft); color: var(--selection-accent); font-style: normal; font-weight: 900; }
 .selected-empty { margin: 0; color: var(--muted); font-size: .88rem; }
@@ -172,7 +172,7 @@ button { cursor: pointer; }
 .animal-card.found { opacity: .72; }
 .animal-name { font-weight: 800; }
 .animal-meta { margin-top: 4px; color: var(--muted); font-size: .84rem; line-height: 1.35; }
-.points { display: inline-flex; align-items: center; justify-content: center; min-width: 42px; height: 32px; border-radius: 999px; background: var(--surface-2); font-weight: 850; var(--toast-text)-space: nowrap; }
+.points { display: inline-flex; align-items: center; justify-content: center; min-width: 42px; height: 32px; border-radius: 999px; background: var(--surface-2); font-weight: 850; white-space: nowrap; }
 .points.p3 { background: var(--points-3-bg); }
 .points.p2 { background: var(--points-2-bg); }
 .points.p1 { background: var(--points-1-bg); }
@@ -206,4 +206,29 @@ button { cursor: pointer; }
 @media (min-width: 620px) {
   .content { padding-inline: 22px; }
   .animal-list { grid-template-columns: 1fr 1fr; }
+}
+
+/* Photos sur les cartes */
+.animal-card { grid-template-columns: 62px minmax(0, 1fr) auto; gap: 10px; padding: 9px; }
+.animal-card-info { min-width: 0; }
+.animal-thumb { width: 62px; height: 62px; object-fit: cover; border-radius: 11px; background: var(--surface-2); }
+.animal-thumb-empty { display: grid; place-items: center; font-size: 1.45rem; }
+.animal-detail-image { display: block; width: 100%; max-height: 240px; object-fit: contain; border-radius: 12px; background: var(--surface-2); }
+.animal-detail-image.animal-thumb-empty { height: 120px; }
+
+/* Sélections et filtres fixes pendant le défilement */
+.selection-toolbar { position: sticky; top: 67px; z-index: 12; padding: 6px 0 8px; background: var(--bg); }
+.selection-toolbar .selected-panel { margin: 0 0 6px; padding: 8px 10px; border-radius: 12px; }
+.selection-toolbar .selected-panel-head { margin-bottom: 5px; font-size: .85rem; }
+.selection-toolbar .selected-chips { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 3px; scrollbar-width: thin; }
+.selection-toolbar .selected-chip { flex: 0 0 auto; min-height: 30px; padding: 3px 6px 3px 9px; font-size: .76rem; }
+.selection-toolbar .selected-chip i { width: 18px; height: 18px; }
+.selection-toolbar .selected-empty { font-size: .78rem; }
+.selection-toolbar .filters { position: static; padding: 3px 0; gap: 5px; }
+.selection-toolbar .search { min-height: 39px; }
+.selection-toolbar .filter-row { gap: 6px; }
+@media (max-width: 390px) {
+  .animal-card { grid-template-columns: 52px minmax(0, 1fr) auto; gap: 7px; }
+  .animal-thumb { width: 52px; height: 52px; }
+  .animal-meta { font-size: .76rem; }
 }
