@@ -621,13 +621,13 @@
     "image": "agouti.jpg"
   },
   {
-    "id": "canard-a-collier-noir-2",
+    "id": "canard-a-collier-noir",
     "name": "Canard à collier noir",
     "zone": "Cambron l'Abbaye",
     "location": "L'Oasis",
     "points": 2,
     "observation": "",
-    "image": "canard-a-collier-noir-2.jpg"
+    "image": "canard-a-collier-noir.jpg"
   },
   {
     "id": "tortue-geante-des-seychelles",
@@ -1152,13 +1152,13 @@
     "image": "iguane.jpg"
   },
   {
-    "id": "chauve-souris-2",
+    "id": "chauve-souris",
     "name": "Chauve-souris",
     "zone": "Edenya",
     "location": "",
     "points": 1,
     "observation": "",
-    "image": "chauve-souris-2.jpg"
+    "image": "chauve-souris.jpg"
   },
   {
     "id": "coati",
@@ -1170,13 +1170,13 @@
     "image": "coati.jpg"
   },
   {
-    "id": "touraco-pauline-2",
+    "id": "touraco-pauline",
     "name": "Touraco Pauline",
     "zone": "Edenya",
     "location": "",
     "points": 3,
     "observation": "",
-    "image": "touraco-pauline-2.jpg"
+    "image": "touraco-pauline.jpg"
   },
   {
     "id": "rollier-a-ventre-bleu",
@@ -1359,13 +1359,13 @@
     "image": "castor.jpg"
   },
   {
-    "id": "daim-2",
+    "id": "daim",
     "name": "Daim",
     "zone": "La Dernière Frontière",
     "location": "Extérieur",
     "points": 1,
     "observation": "",
-    "image": "daim-2.jpg"
+    "image": "daim.jpg"
   },
   {
     "id": "buffle-du-cap",
@@ -1413,13 +1413,13 @@
     "image": "grand-koudou.jpg"
   },
   {
-    "id": "suricate-2",
+    "id": "suricate",
     "name": "Suricate",
     "zone": "La Terre des Origines",
     "location": "Extérieur",
     "points": 1,
     "observation": "",
-    "image": "suricate-2.jpg"
+    "image": "suricate.jpg"
   },
   {
     "id": "porc-epic-du-cap",
@@ -2385,13 +2385,13 @@
     "image": "esturgeon.jpg"
   },
   {
-    "id": "carpe-koi-2",
+    "id": "carpe-koi",
     "name": "Carpe Koï",
     "zone": "Le Royaume du Milieu",
     "location": "Tropicalia",
     "points": 1,
     "observation": "",
-    "image": "carpe-koi-2.jpg"
+    "image": "carpe-koi.jpg"
   },
   {
     "id": "alligator-de-chine",
@@ -2439,13 +2439,13 @@
     "image": "grue-du-japon.jpg"
   },
   {
-    "id": "macaque-japonais-2",
+    "id": "macaque-japonais",
     "name": "Macaque japonais",
     "zone": "Les Îles du Soleil Levant",
     "location": "",
     "points": 2,
     "observation": "Toute la journée ; groupe généralement visible.",
-    "image": "macaque-japonais-2.jpg"
+    "image": "macaque-japonais.jpg"
   },
   {
     "id": "siamang",
