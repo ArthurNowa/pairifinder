@@ -1116,13 +1116,13 @@
     "image": "fourmilier-geant.jpg"
   },
   {
-    "id": "tapir",
-    "name": "Tapir",
+    "id": "tapir-terrestre",
+    "name": "Tapir terrestre",
     "zone": "Edenya",
     "location": "",
     "points": 2,
     "observation": "Matin ou fin de journée ; scruter les berges; zones ombragées et passages entre végétation et eau.",
-    "image": "tapir.jpg"
+    "image": "tapir-terrestre.jpg"
   },
   {
     "id": "capybara",
