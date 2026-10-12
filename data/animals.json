@@ -423,15 +423,6 @@
     "image": "spatule-rosee.jpg"
   },
   {
-    "id": "savacou",
-    "name": "Savacou",
-    "zone": "Cambron l'Abbaye",
-    "location": "Volière géante",
-    "points": 3,
-    "observation": "Toute la journée ; dans les arbres ou au bord de l'eau",
-    "image": "savacou.jpg"
-  },
-  {
     "id": "bernache-nene",
     "name": "Bernache néné",
     "zone": "Cambron l'Abbaye",
@@ -567,13 +558,13 @@
     "image": "tamarin-lion-dore.jpg"
   },
   {
-    "id": "toucan",
-    "name": "Toucan",
+    "id": "toucan-toco",
+    "name": "Toucan Toco",
     "zone": "Cambron l'Abbaye",
     "location": "L'Oasis",
     "points": 2,
     "observation": "",
-    "image": "toucan.jpg"
+    "image": "toucan-toco.jpg"
   },
   {
     "id": "calao",
@@ -691,6 +682,15 @@
     "points": 3,
     "observation": "",
     "image": "grand-eclectus.jpg"
+  },
+  {
+    "id": "vautour-a-tete-blanche",
+    "name": "Vautour à tête banche",
+    "zone": "Cambron l'Abbaye",
+    "location": "Volières extérieures",
+    "points": 2,
+    "observation": "",
+    "image": "vautour-a-tete-blanche.jpg"
   },
   {
     "id": "vautour-moine",
@@ -1071,13 +1071,13 @@
     "image": "lamantin.jpg"
   },
   {
-    "id": "tortue-terrestre-geante",
-    "name": "Tortue terrestre Géante",
+    "id": "tortue-geante-des-galapagos",
+    "name": "Tortue Géante des Galapagos",
     "zone": "Edenya",
     "location": "",
     "points": 1,
     "observation": "",
-    "image": "tortue-terrestre-geante.jpg"
+    "image": "tortue-geante-des-galapagos.jpg"
   },
   {
     "id": "murene",
@@ -1197,13 +1197,13 @@
     "image": "rollier-a-ventre-bleu.jpg"
   },
   {
-    "id": "lemurien-maki-catta",
-    "name": "Lémurien (maki catta)",
+    "id": "maki-catta",
+    "name": "Maki Catta (Lémurien)",
     "zone": "Edenya",
     "location": "",
     "points": 1,
     "observation": "",
-    "image": "lemurien-maki-catta.jpg"
+    "image": "maki-catta.jpg"
   },
   {
     "id": "fennec",
@@ -1440,15 +1440,6 @@
     "image": "porc-epic-du-cap.jpg"
   },
   {
-    "id": "gorille-des-plaines-de-l-ouest",
-    "name": "Gorille des plaines de l'Ouest",
-    "zone": "La Terre des Origines",
-    "location": "Extérieur",
-    "points": 1,
-    "observation": "Journée ; vérifier les îles; zones ombragées et abris.",
-    "image": "gorille-des-plaines-de-l-ouest.jpg"
-  },
-  {
     "id": "guepard",
     "name": "Guépard",
     "zone": "La Terre des Origines",
@@ -1467,13 +1458,13 @@
     "image": "gorille-des-plaines.jpg"
   },
   {
-    "id": "colobe",
-    "name": "Colobe",
+    "id": "colobe-guereza",
+    "name": "Colobe Guereza",
     "zone": "La Terre des Origines",
     "location": "Extérieur",
     "points": 2,
     "observation": "",
-    "image": "colobe.jpg"
+    "image": "colobe-guereza.jpg"
   },
   {
     "id": "mangabey-noir",
@@ -1486,7 +1477,7 @@
   },
   {
     "id": "maki-catta",
-    "name": "Maki Catta",
+    "name": "Maki Catta (Lémurien)",
     "zone": "La Terre des Origines",
     "location": "Extérieur",
     "points": 2,
@@ -1827,13 +1818,13 @@
     "image": "morse.jpg"
   },
   {
-    "id": "ours-blanc",
-    "name": "Ours blanc",
+    "id": "ours-polaire",
+    "name": "Ours Polaire",
     "zone": "La Terre du Froid",
     "location": "",
     "points": 1,
     "observation": "Toute la journée ; vérifier espaces terrestres et bassin; souvent bien visible.",
-    "image": "ours-blanc.jpg"
+    "image": "ours-polaire.jpg"
   },
   {
     "id": "raton-laveur",
@@ -1845,13 +1836,13 @@
     "image": "raton-laveur.jpg"
   },
   {
-    "id": "mouffette",
-    "name": "Mouffette",
+    "id": "mouffette-rayee",
+    "name": "Mouffette Rayée",
     "zone": "La Terre du Froid",
     "location": "",
     "points": 2,
     "observation": "Cohabite avec les ratons laveurs.",
-    "image": "mouffette.jpg"
+    "image": "mouffette-rayee.jpg"
   },
   {
     "id": "renne",
@@ -2016,6 +2007,15 @@
     "image": "emeu.jpg"
   },
   {
+    "id": "elephant-d-asie",
+    "name": "Elephant d'Asie",
+    "zone": "Le Royaume de Ganesha",
+    "location": "",
+    "points": 1,
+    "observation": "",
+    "image": "elephant-d-asie.jpg"
+  },
+  {
     "id": "gibbon-a-joues-jaunes",
     "name": "Gibbon à joues jaunes",
     "zone": "Le Royaume de Ganesha",
@@ -2025,13 +2025,13 @@
     "image": "gibbon-a-joues-jaunes.jpg"
   },
   {
-    "id": "loutre-asiatique",
-    "name": "Loutre asiatique",
+    "id": "loutre-naine-d-asie",
+    "name": "Loutre naine d'Asie",
     "zone": "Le Royaume de Ganesha",
     "location": "",
     "points": 2,
     "observation": "Matin et périodes de nourrissage ; surveiller eau; berges et cachettes.",
-    "image": "loutre-asiatique.jpg"
+    "image": "loutre-naine-d-asie.jpg"
   },
   {
     "id": "macaque-a-crete",
@@ -2241,13 +2241,13 @@
     "image": "takin-dore.jpg"
   },
   {
-    "id": "paresseux-a-deux-doigt",
-    "name": "Paresseux à deux doigt",
+    "id": "paresseux-a-2-doigts",
+    "name": "Paresseux à 2 doigts",
     "zone": "Le Royaume du Milieu",
     "location": "Tropicalia",
     "points": 3,
     "observation": "",
-    "image": "paresseux-a-deux-doigt.jpg"
+    "image": "paresseux-a-2-doigts.jpg"
   },
   {
     "id": "paradisier",
