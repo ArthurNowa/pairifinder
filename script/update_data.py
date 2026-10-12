@@ -61,7 +61,6 @@ def check_images_in_json (animal_id, animal_image):
     assert type(animal_id) == str, "/!\\ Erreur de clé avec l'animal_id {}".format(animal_id)
     assert type(animal_image) == str, "/!\\ Erreur d'image avec l'animal_id {}".format(animal_id)
 
-
     res = find_images_by_id (animal_id)
     if len(res) == 0:
         MISSING_IMAGES.add(animal_id)
@@ -96,7 +95,6 @@ def rename_photos ():
         name, ext = photo.name.split(".")
         
         new_filename = name.strip("0123456789_-") + "." + ext
-        print(filename, new_filename)
         filepath = IMAGES_DIR.joinpath(filename)
         try:
             os.rename(filepath, IMAGES_DIR.joinpath(new_filename))

@@ -54,6 +54,15 @@
     "image": "foulque.jpg"
   },
   {
+    "id": "gallinule-poule-d-eau",
+    "name": "Gallinule Poule d'eau",
+    "zone": "Partout",
+    "location": "Près des points d'eau",
+    "points": 1,
+    "observation": "",
+    "image": "gallinule-poule-d-eau.jpg"
+  },
+  {
     "id": "martin-pecheur",
     "name": "Martin-Pêcheur",
     "zone": "Partout",
@@ -810,6 +819,15 @@
     "image": "manchot-du-cap.jpg"
   },
   {
+    "id": "manchot-de-humboldt",
+    "name": "Manchot du Cap",
+    "zone": "Cambron-sur-mer",
+    "location": "derrière l'aquarium",
+    "points": 2,
+    "observation": "Toute la journée ; bassin et plages; très bonne visibilité.",
+    "image": "manchot-de-humboldt.jpg"
+  },
+  {
     "id": "otarie-a-fourrure-d-afrique-du-sud",
     "name": "Otarie à fourrure d'Afrique du Sud",
     "zone": "Cambron-sur-mer",
@@ -1026,13 +1044,13 @@
     "image": "drill.jpg"
   },
   {
-    "id": "alligator",
-    "name": "Alligator",
+    "id": "alligator-d-amerique",
+    "name": "Alligator d'Amérique",
     "zone": "Edenya",
     "location": "",
     "points": 1,
     "observation": "",
-    "image": "alligator.jpg"
+    "image": "alligator-d-amerique.jpg"
   },
   {
     "id": "echasse-d-amerique",
@@ -1143,22 +1161,22 @@
     "image": "cameleon-de-parson.jpg"
   },
   {
-    "id": "paresseux",
-    "name": "Paresseux",
+    "id": "paresseux-a-2-doigts",
+    "name": "Paresseux à 2 doigts",
     "zone": "Edenya",
     "location": "",
     "points": 2,
     "observation": "",
-    "image": "paresseux.jpg"
+    "image": "paresseux-a-2-doigts.jpg"
   },
   {
-    "id": "iguane",
-    "name": "Iguane",
+    "id": "iguane-vert",
+    "name": "Iguane vert",
     "zone": "Edenya",
     "location": "",
     "points": 1,
     "observation": "",
-    "image": "iguane.jpg"
+    "image": "iguane-vert.jpg"
   },
   {
     "id": "chauve-souris",
@@ -1233,13 +1251,13 @@
     "image": "tarsier.jpg"
   },
   {
-    "id": "singe-ecureuil",
-    "name": "Singe-écureuil",
+    "id": "saimiri",
+    "name": "Saïmiri (Singe-écureuil)",
     "zone": "Edenya",
     "location": "Autour du ponton",
     "points": 2,
     "observation": "",
-    "image": "singe-ecureuil.jpg"
+    "image": "saimiri.jpg"
   },
   {
     "id": "conure-doree",
@@ -1260,13 +1278,13 @@
     "image": "nephile-doree.jpg"
   },
   {
-    "id": "mandarin",
-    "name": "Mandarin",
+    "id": "moineau-de-java",
+    "name": "Moineau de Java",
     "zone": "Edenya",
     "location": "Volière aux papillons",
     "points": 2,
     "observation": "",
-    "image": "mandarin.jpg"
+    "image": "moineau-de-java.jpg"
   },
   {
     "id": "morpho-bleu",
@@ -2331,13 +2349,13 @@
     "image": "nicobar-a-camail.jpg"
   },
   {
-    "id": "faisan-argus-geant",
-    "name": "Faisan Argus géant",
+    "id": "argus-geant",
+    "name": "Argus géant",
     "zone": "Le Royaume du Milieu",
     "location": "Tropicalia",
-    "points": 2,
+    "points": 3,
     "observation": "",
-    "image": "faisan-argus-geant.jpg"
+    "image": "argus-geant.jpg"
   },
   {
     "id": "zosterops-du-kilimandjaro",
