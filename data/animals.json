@@ -27,6 +27,15 @@
     "image": "cigogne-blanche.jpg"
   },
   {
+    "id": "pelican-blanc",
+    "name": "Pélican Blanc",
+    "zone": "Partout",
+    "location": "Lac",
+    "points": 1,
+    "observation": "Toute la journée ; autour du lac",
+    "image": "pelican-blanc.jpg"
+  },
+  {
     "id": "heron-cendre",
     "name": "Héron Cendré",
     "zone": "Partout",
@@ -34,6 +43,15 @@
     "points": 2,
     "observation": "",
     "image": "heron-cendre.jpg"
+  },
+  {
+    "id": "grand-cormoran",
+    "name": "Grand Cormoran",
+    "zone": "Lac",
+    "location": "Près des points d'eau",
+    "points": 2,
+    "observation": "",
+    "image": "grand-cormoran.jpg"
   },
   {
     "id": "bernache-nonnette",
@@ -167,8 +185,17 @@
     "zone": "Cambron l'Abbaye",
     "location": "Mini-Ferme",
     "points": 1,
-    "observation": "Toute la journée ; grand animal en espace ouvert.",
+    "observation": "",
     "image": "dindon-crolwitzer.jpg"
+  },
+  {
+    "id": "oie-cendree",
+    "name": "Oie Cendrée",
+    "zone": "Cambron l'Abbaye",
+    "location": "Mini-Ferme",
+    "points": 1,
+    "observation": "",
+    "image": "oie-cendree.jpg"
   },
   {
     "id": "lapin-domestique",
@@ -459,13 +486,13 @@
     "image": "grand-tatou-velu.jpg"
   },
   {
-    "id": "goura-couronne",
-    "name": "Goura couronné",
+    "id": "goura-de-sclater",
+    "name": "Goura de-sclater",
     "zone": "Cambron l'Abbaye",
     "location": "L'Oasis",
     "points": 1,
     "observation": "",
-    "image": "goura-couronne.jpg"
+    "image": "goura-de-sclater.jpg"
   },
   {
     "id": "mangouste-naine",
@@ -774,13 +801,13 @@
     "image": "grand-duc.jpg"
   },
   {
-    "id": "gyapete-barbu",
-    "name": "Gyapéte barbu",
+    "id": "gypaete-barbu",
+    "name": "Gypaéte barbu",
     "zone": "Cambron l'Abbaye",
     "location": "Volières extérieures",
     "points": 2,
     "observation": "",
-    "image": "gyapete-barbu.jpg"
+    "image": "gypaete-barbu.jpg"
   },
   {
     "id": "harfang-des-neiges",
@@ -1296,6 +1323,15 @@
     "image": "morpho-bleu.jpg"
   },
   {
+    "id": "malachite",
+    "name": "Papillon Malachite",
+    "zone": "Edenya",
+    "location": "Volière aux papillons",
+    "points": 2,
+    "observation": "",
+    "image": "malachite.jpg"
+  },
+  {
     "id": "jaguar",
     "name": "Jaguar (Balam)",
     "zone": "Edenya",
@@ -1314,13 +1350,13 @@
     "image": "elan.jpg"
   },
   {
-    "id": "dindon",
-    "name": "Dindon",
+    "id": "dindon-domestique",
+    "name": "Dindon Domestique",
     "zone": "La Dernière Frontière",
     "location": "Extérieur",
     "points": 2,
     "observation": "",
-    "image": "dindon.jpg"
+    "image": "dindon-domestique.jpg"
   },
   {
     "id": "wapiti",
@@ -1620,20 +1656,20 @@
     "image": "gnou.jpg"
   },
   {
-    "id": "bec-en-sabot",
-    "name": "Bec-en-Sabot",
+    "id": "bec-en-sabot-du-nil",
+    "name": "Bec-en-Sabot du Nil",
     "zone": "La Terre des Origines",
     "location": "Mersus Emergo",
     "points": 3,
     "observation": "",
-    "image": "bec-en-sabot.jpg"
+    "image": "bec-en-sabot-du-nil.jpg"
   },
   {
     "id": "tortue-mata-mata",
     "name": "Tortue Mata mata",
     "zone": "La Terre des Origines",
     "location": "Mersus Emergo",
-    "points": 1,
+    "points": 2,
     "observation": "",
     "image": "tortue-mata-mata.jpg"
   },
@@ -1642,7 +1678,7 @@
     "name": "Dendrobate",
     "zone": "La Terre des Origines",
     "location": "Mersus Emergo",
-    "points": 1,
+    "points": 2,
     "observation": "",
     "image": "dendrobate.jpg"
   },
@@ -1665,13 +1701,13 @@
     "image": "gecko-geant-de-madagascar.jpg"
   },
   {
-    "id": "cameleon-panthere",
-    "name": "Caméléon Panthère",
+    "id": "pape-de-noumea",
+    "name": "Pape de Nouméa",
     "zone": "La Terre des Origines",
     "location": "Mersus Emergo",
-    "points": 2,
+    "points": 3,
     "observation": "",
-    "image": "cameleon-panthere.jpg"
+    "image": "pape-de-noumea.jpg"
   },
   {
     "id": "python",
@@ -2097,13 +2133,13 @@
     "image": "sanglier-des-visayas.jpg"
   },
   {
-    "id": "saimiri-de-bolivie",
-    "name": "Saïmiri de Bolivie",
+    "id": "saimiri",
+    "name": "Saïmiri",
     "zone": "Le Royaume de Ganesha",
     "location": "",
     "points": 1,
     "observation": "Journée ; observer branches et déplacements rapides du groupe.",
-    "image": "saimiri-de-bolivie.jpg"
+    "image": "saimiri.jpg"
   },
   {
     "id": "tigre-blanc-royal",

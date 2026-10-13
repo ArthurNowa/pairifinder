@@ -19,6 +19,7 @@ ALL_NEEDED_IMAGES = set()
 COMPLETE_IMAGES = set()
 MISSING_IMAGES = set()
 IMAGES_TO_FIX = set()
+REMAINING_IMAGES = set()
 
 
 
@@ -128,6 +129,13 @@ def register_data():
 
 
 
+def images_to_ids (image_set):
+    res = set()
+    for image in image_set:
+        res.add(image.split(".")[0])
+    return res
+
+
 
         
 if __name__ == "__main__":
@@ -157,10 +165,21 @@ if __name__ == "__main__":
         print("Les images suivantes ne correspondent pas aux données (mauvaise extension ou plusieurs images trouvées) :")
         print(IMAGES_TO_FIX)
         print()
+        
+    REMAINING_IMAGES = images_to_ids(IMAGES_DATA)
+    REMAINING_IMAGES = REMAINING_IMAGES.difference(IMAGES_TO_FIX)
+    REMAINING_IMAGES = REMAINING_IMAGES.difference(COMPLETE_IMAGES)
+    
+    if len(REMAINING_IMAGES) > 0:
+        print("###################################################################################")
+        print("Les images suivantes sont en trop, ou ont un mauvais nom :")
+        print(REMAINING_IMAGES)
+        print()
     
     nb_animals = len(DATA_LIST)
     print("=================================")
     print(" - Images OK : {}/{}".format(len(COMPLETE_IMAGES), nb_animals))
     print(" - Images Manquantes : {}/{}".format(len(MISSING_IMAGES), nb_animals))
     print(" - Images à Fix : {}/{}".format(len(IMAGES_TO_FIX), nb_animals))
+    print(" - Images restantes : {}/{}".format(len(REMAINING_IMAGES), nb_animals))
     print("=================================")
