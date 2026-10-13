@@ -1656,22 +1656,22 @@
     "image": "pogona-vitticeps.jpg"
   },
   {
-    "id": "gecko-de-madagascar",
-    "name": "Gecko de Madagascar",
+    "id": "gecko-geant-de-madagascar",
+    "name": "Gecko Géant de Madagascar",
     "zone": "La Terre des Origines",
     "location": "Mersus Emergo",
     "points": 2,
     "observation": "",
-    "image": "gecko-de-madagascar.jpg"
+    "image": "gecko-geant-de-madagascar.jpg"
   },
   {
-    "id": "cameleon",
-    "name": "Caméléon",
+    "id": "cameleon-panthere",
+    "name": "Caméléon Panthère",
     "zone": "La Terre des Origines",
     "location": "Mersus Emergo",
     "points": 2,
     "observation": "",
-    "image": "cameleon.jpg"
+    "image": "cameleon-panthere.jpg"
   },
   {
     "id": "python",
