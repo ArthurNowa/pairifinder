@@ -282,7 +282,21 @@ function animalCard(a, selected = false, joker = false) {
     <span class="points p${a.points}">${a.points} pt${a.points > 1 ? 's' : ''}</span>
   </button>`;
 }
-function huntCard(a){const found=game.found.includes(a.id);const score=a.points*(game.joker===a.id?3:1);return `<button class="animal-card ${found?'selected found':''}" data-found="${a.id}"><div>${animalImage(a)}<div class="animal-name">${found?'✓ ':''}${escapeHtml(a.name)} ${game.joker===a.id?'<span class="joker">🃏</span>':''}</div><div class="animal-meta">${escapeHtml(a.zone)} · ${escapeHtml(a.location)}</div></div><span class="points p${a.points}">${found?'+':''}${score}</span></button>`;}
+function huntCard(a) {
+  const found = game.found.includes(a.id);
+  const score = a.points * (game.joker === a.id ? 3 : 1);
+
+  return `<button class="animal-card hunt-card ${found ? 'selected found' : ''}"
+    data-found="${escapeHtml(a.id)}"
+    aria-pressed="${found}">
+    ${animalImage(a)}
+    <div class="animal-card-info">
+      <div class="animal-name">${found ? '✓ ' : ''}${escapeHtml(a.name)} ${game.joker === a.id ? '<span class="joker">🃏</span>' : ''}</div>
+      <span class="points p${a.points}">${found ? '+' : ''}${score} pt${score > 1 ? 's' : ''}</span>
+      <div class="animal-meta">${escapeHtml(a.zone)} · ${escapeHtml(a.location)}</div>
+    </div>
+  </button>`;
+}
 function bindAnimalCards(onClick){document.querySelectorAll('[data-animal]').forEach(card=>{card.onclick=e=>{if(e.detail===2){showAnimal(card.dataset.animal);return;}onClick(card.dataset.animal);};card.oncontextmenu=e=>{e.preventDefault();showAnimal(card.dataset.animal);};});}
 function showAnimal(id){const a=getAnimal(animals,id);if(!a)return;animalDialogContent.innerHTML=`<div class="sheet-head"><h2>${escapeHtml(a.name)}</h2><button class="icon-btn" id="closeAnimal">×</button></div>${animalImage(a, "animal-detail-image")}<div class="detail-grid"><div class="detail-row"><small>Zone</small>${escapeHtml(a.zone)}</div><div class="detail-row"><small>Emplacement</small>${escapeHtml(a.location)}</div><div class="detail-row"><small>Barème</small>${a.points} point${a.points>1?'s':''}</div><div class="detail-row"><small>Observation</small>${escapeHtml(a.observation||'Aucune indication particulière.')}</div></div>`;animalDialog.showModal();document.querySelector('#closeAnimal').onclick=()=>animalDialog.close();}
 function basePotential(){return game.selection.reduce((s,id)=>s+(getAnimal(animals,id)?.points||0),0);}
