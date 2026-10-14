@@ -139,11 +139,11 @@ function renderSelection() {
       ${game.selection.length
         ? `<div class="selected-chips">${game.selection.map(id => { const a = getAnimal(animals,id); return a ? `<button class="selected-chip" data-remove-selected="${a.id}" title="Retirer ${escapeHtml(a.name)}"><span>${escapeHtml(a.name)}</span><b>${a.points} pt${a.points>1?'s':''}</b><i>×</i></button>` : ''; }).join('')}</div>`
         : '<p class="selected-empty">Aucun animal sélectionné pour le moment.</p>'}
+      <div class="stack"><button id="toJoker" class="primary full" ${game.selection.length !== 10 ? 'disabled' : ''}>Choisir mon Joker</button></div>
     </section>
       <div class="filters">${filterMarkup()}</div>
     </div>
-    <div class="animal-list">${list.map(animal => animalCard(animal, game.selection.includes(animal.id))).join('')}</div>
-    <div class="stack"><button id="toJoker" class="primary full" ${game.selection.length !== 10 ? 'disabled' : ''}>Choisir mon Joker</button></div>`;
+    <div class="animal-list">${list.map(animal => animalCard(animal, game.selection.includes(animal.id))).join('')}</div>`;
   bindFilters(renderSelection);
   document.querySelectorAll('[data-remove-selected]').forEach(btn => btn.onclick = () => {
     game.selection = game.selection.filter(id => id !== btn.dataset.removeSelected);
@@ -173,8 +173,8 @@ function renderHunt() {
   const selected = game.selection.map(id=>getAnimal(animals,id)).filter(Boolean);
   app.innerHTML = `<div class="section-title"><div><h2>Ma chasse</h2><p>${game.player} · touche une cible pour la valider.</p></div><span class="counter">${game.found.length}/10</span></div>
     <div class="summary-strip"><div class="stat"><strong>${photoScore(game,animals)}</strong><span>score actuel</span></div><div class="stat"><strong>${potentialScore(game,animals)}</strong><span>score maximum</span></div></div>
-    <div class="stack"><button id="finishHunt" class="primary full">Terminer la chasse</button></div>
-    <div class="animal-list">${selected.map(a=>huntCard(a)).join('')}</div>`;
+    <div class="animal-list">${selected.map(a=>huntCard(a)).join('')}</div>
+    <div class="stack"><button id="finishHunt" class="primary full">Terminer la chasse</button></div>`;
   document.querySelectorAll('[data-found]').forEach(btn=>btn.onclick=()=>{const id=btn.dataset.found;game.found=game.found.includes(id)?game.found.filter(x=>x!==id):[...game.found,id];saveGame(game);renderHunt();});
   document.querySelector('#finishHunt').onclick=()=>{if(!confirm('Passer aux prédictions ? Tu pourras toujours consulter ta chasse.'))return;game.status='guesses';saveGame(game);route='guesses';render();};
 }
@@ -282,11 +282,11 @@ function animalCard(a, selected = false, joker = false) {
     <span class="points p${a.points}">${a.points} pt${a.points > 1 ? 's' : ''}</span>
   </button>`;
 }
-function huntCard(a){const found=game.found.includes(a.id);const score=a.points*(game.joker===a.id?3:1);return `<button class="animal-card ${found?'selected found':''}" data-found="${a.id}"><div><div class="animal-name">${found?'✓ ':''}${escapeHtml(a.name)} ${game.joker===a.id?'<span class="joker">🃏</span>':''}</div><div class="animal-meta">${escapeHtml(a.zone)} · ${escapeHtml(a.location)}</div></div><span class="points p${a.points}">${found?'+':''}${score}</span></button>`;}
+function huntCard(a){const found=game.found.includes(a.id);const score=a.points*(game.joker===a.id?3:1);return `<button class="animal-card ${found?'selected found':''}" data-found="${a.id}"><div>${animalImage(a)}<div class="animal-name">${found?'✓ ':''}${escapeHtml(a.name)} ${game.joker===a.id?'<span class="joker">🃏</span>':''}</div><div class="animal-meta">${escapeHtml(a.zone)} · ${escapeHtml(a.location)}</div></div><span class="points p${a.points}">${found?'+':''}${score}</span></button>`;}
 function bindAnimalCards(onClick){document.querySelectorAll('[data-animal]').forEach(card=>{card.onclick=e=>{if(e.detail===2){showAnimal(card.dataset.animal);return;}onClick(card.dataset.animal);};card.oncontextmenu=e=>{e.preventDefault();showAnimal(card.dataset.animal);};});}
 function showAnimal(id){const a=getAnimal(animals,id);if(!a)return;animalDialogContent.innerHTML=`<div class="sheet-head"><h2>${escapeHtml(a.name)}</h2><button class="icon-btn" id="closeAnimal">×</button></div>${animalImage(a, "animal-detail-image")}<div class="detail-grid"><div class="detail-row"><small>Zone</small>${escapeHtml(a.zone)}</div><div class="detail-row"><small>Emplacement</small>${escapeHtml(a.location)}</div><div class="detail-row"><small>Barème</small>${a.points} point${a.points>1?'s':''}</div><div class="detail-row"><small>Observation</small>${escapeHtml(a.observation||'Aucune indication particulière.')}</div></div>`;animalDialog.showModal();document.querySelector('#closeAnimal').onclick=()=>animalDialog.close();}
 function basePotential(){return game.selection.reduce((s,id)=>s+(getAnimal(animals,id)?.points||0),0);}
-function allGuessesReady(){return game.opponents.every(o=>o.guesses.length===5&&o.jokerGuess);}
+function allGuessesReady(){return game.opponents.every(o=>o.guesses.length===5);}
 function routeForStatus(status){return ({selection:'selection',playing:'hunt',guesses:'guesses',finished:'results'})[status]||'home';}
 function showToast(message){toast.textContent=message;toast.classList.add('show');clearTimeout(showToast.t);showToast.t=setTimeout(()=>toast.classList.remove('show'),1300);}
 function escapeHtml(value=''){return String(value).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));}
