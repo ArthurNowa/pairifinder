@@ -173,8 +173,8 @@ function renderHunt() {
   const selected = game.selection.map(id=>getAnimal(animals,id)).filter(Boolean);
   app.innerHTML = `<div class="section-title"><div><h2>Ma chasse</h2><p>${game.player} · touche une cible pour la valider.</p></div><span class="counter">${game.found.length}/10</span></div>
     <div class="summary-strip"><div class="stat"><strong>${photoScore(game,animals)}</strong><span>score actuel</span></div><div class="stat"><strong>${potentialScore(game,animals)}</strong><span>score maximum</span></div></div>
-    <div class="animal-list">${selected.map(a=>huntCard(a)).join('')}</div>
-    <div class="stack"><button id="finishHunt" class="primary full">Terminer la chasse</button></div>`;
+    <div class="stack"><button id="finishHunt" class="primary full">Terminer la chasse</button></div>
+    <div class="animal-list">${selected.map(a=>huntCard(a)).join('')}</div>`;
   document.querySelectorAll('[data-found]').forEach(btn=>btn.onclick=()=>{const id=btn.dataset.found;game.found=game.found.includes(id)?game.found.filter(x=>x!==id):[...game.found,id];saveGame(game);renderHunt();});
   document.querySelector('#finishHunt').onclick=()=>{if(!confirm('Passer aux prédictions ? Tu pourras toujours consulter ta chasse.'))return;game.status='guesses';saveGame(game);route='guesses';render();};
 }
@@ -191,9 +191,8 @@ function renderGuesses() {
       ${selectionPanel(opponent.guesses)}
       <div class="filters">${filterMarkup()}</div>
     </div>
-    <div class="animal-list">${list.map(a=>animalCard(a,opponent.guesses.includes(a.id),opponent.jokerGuess===a.id)).join('')}</div>
-    <div class="card"><h3>Joker supposé</h3><p class="animal-meta">Choisis d'abord 5 animaux, puis désigne le Joker parmi eux.</p><select id="jokerGuess" class="search"><option value="">— Joker inconnu —</option>${opponent.guesses.map(id=>{const a=getAnimal(animals,id);return `<option value="${id}" ${opponent.jokerGuess===id?'selected':''}>${escapeHtml(a.name)}</option>`}).join('')}</select></div>
-    <div class="stack"><button id="finishGame" class="primary full" ${!allGuessesReady()?'disabled':''}>Voir le récapitulatif</button></div>`;
+    <div class="stack"><button id="finishGame" class="primary full" ${!allGuessesReady()?'disabled':''}>Voir le récapitulatif</button></div>
+    <div class="animal-list">${list.map(a=>animalCard(a,opponent.guesses.includes(a.id),opponent.jokerGuess===a.id)).join('')}</div>`;
   document.querySelectorAll('[data-opponent]').forEach(btn=>btn.onclick=()=>{sessionStorage.setItem('guessOpponent',btn.dataset.opponent);renderGuesses();});
   bindFilters(renderGuesses);
   document.querySelectorAll('[data-remove-guess]').forEach(btn => btn.onclick = () => {
