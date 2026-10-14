@@ -131,6 +131,7 @@ button { cursor: pointer; }
 .topbar { position: sticky; top: 0; z-index: 20; display: grid; grid-template-columns: 42px 1fr 42px; align-items: center; gap: 8px; padding: 12px 14px; background: var(--topbar-bg); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
 .topbar h1 { margin: 0; font-size: 1.18rem; }
 .eyebrow { margin: 0 0 2px; color: var(--muted); font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; }
+#menuBtn { right: 0; }
 .icon-btn { width: 42px; height: 42px; border: 0; border-radius: 50%; background: transparent; color: var(--text); font-size: 1.35rem; }
 .icon-btn:active { background: var(--surface-2); }
 .content { padding: 18px 14px calc(92px + var(--safe-bottom)); }
