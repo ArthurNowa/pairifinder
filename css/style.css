@@ -208,7 +208,7 @@ button { cursor: pointer; }
 .animal-card.found { opacity: .72; }
 .animal-name { font-weight: 800; }
 .animal-meta { margin-top: 4px; color: var(--muted); font-size: .84rem; line-height: 1.35; }
-.points { display: inline-flex; align-items: center; justify-content: center; min-width: 42px; height: 32px; border-radius: 999px; background: var(--surface-2); font-weight: 850; white-space: nowrap; }
+.points { display: inline-flex; align-items: center; justify-content: center; min-width: 128px; height: 32px; border-radius: 999px; background: var(--surface-2); font-weight: 850; white-space: nowrap; }
 .points.p3 { background: var(--points-3-bg); }
 .points.p2 { background: var(--points-2-bg); }
 .points.p1 { background: var(--points-1-bg); }
