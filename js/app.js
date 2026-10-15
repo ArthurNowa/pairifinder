@@ -185,11 +185,11 @@ function renderGuesses() {
   const opponentIndex = Number(sessionStorage.getItem('guessOpponent') || 0);
   const opponent = game.opponents[Math.min(opponentIndex, game.opponents.length-1)];
   const list = filterAnimals(animals, filters);
-  app.innerHTML = `<div class="section-title"><div><h2>Prédictions</h2><p>Liste supposée de ${escapeHtml(opponent.name)}</p></div><span class="counter">${opponent.guesses.length}/5</span>
-    <div class="stack"><button id="finishGame" class="primary full" ${!allGuessesReady()?'disabled':''}>Voir le récapitulatif</button></div></div>
+  app.innerHTML = `<div class="section-title"><div><h2>Prédictions</h2><p>Liste supposée de ${escapeHtml(opponent.name)}</p></div><span class="counter">${opponent.guesses.length}/5</span></div>
     <div class="filter-row">${game.opponents.map((o,i)=>`<button class="${i===opponentIndex?'primary':'ghost'}" data-opponent="${i}">${escapeHtml(o.name)}</button>`).join('')}</div>
     <div class="selection-toolbar">
       ${selectionPanel(opponent.guesses)}
+      <div class="stack"><button id="finishGame" class="primary full" ${!allGuessesReady()?'disabled':''}>Voir le récapitulatif</button></div>
       <div class="filters">${filterMarkup()}</div>
     </div>
     <div class="animal-list">${list.map(a=>animalCard(a,opponent.guesses.includes(a.id),opponent.jokerGuess===a.id)).join('')}</div>`;
