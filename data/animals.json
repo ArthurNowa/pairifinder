@@ -315,13 +315,13 @@
     "image": "rat-taupe-nu.jpg"
   },
   {
-    "id": "scorpions",
+    "id": "scorpion",
     "name": "Scorpions",
     "zone": "Cambron l'Abbaye",
     "location": "La Crypte",
     "points": 2,
     "observation": "Toute la journée ; regarder attentivement le fond et les cachettes du bac.",
-    "image": "scorpions.jpg"
+    "image": "scorpion.jpg"
   },
   {
     "id": "salamandre-tachetee",
