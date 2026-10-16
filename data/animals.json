@@ -765,13 +765,13 @@
     "image": "vigogne.jpg"
   },
   {
-    "id": "mara-de-patagonie",
+    "id": "lievre-de-patagonie",
     "name": "Mara de Patagonie",
     "zone": "Cambron l'Abbaye",
     "location": "En face des rapaces",
     "points": 2,
     "observation": "",
-    "image": "mara-de-patagonie.jpg"
+    "image": "lievre-de-patagonie.jpg"
   },
   {
     "id": "caraca",
@@ -828,13 +828,13 @@
     "image": "milan-royal.jpg"
   },
   {
-    "id": "chevêche-d-athena",
+    "id": "cheveche-d-athena",
     "name": "Chevêche d'Athena",
     "zone": "Cambron l'Abbaye",
     "location": "Volières extérieures",
     "points": 2,
     "observation": "",
-    "image": "chevêche-d-athena.jpg"
+    "image": "cheveche-d-athena.jpg"
   },
   {
     "id": "manchot-du-cap",
