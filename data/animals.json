@@ -1116,13 +1116,22 @@
     "image": "lamantin.jpg"
   },
   {
-    "id": "tortue-geante-des-galapagos",
-    "name": "Tortue Géante des Galapagos",
+    "id": "arapaima",
+    "name": "Arapaïma",
+    "zone": "Edenya",
+    "location": "Dans le bassin",
+    "points": 2,
+    "observation": "Toute la journée ; meilleures chances depuis les grandes vitres subaquatiques; surtout lorsqu’ils se nourrissent.",
+    "image": "arapaima.jpg"
+  },
+  {
+    "id": "tortue-geante-d-aldabra",
+    "name": "Tortue Géante d'Aldabra'",
     "zone": "Edenya",
     "location": "",
     "points": 1,
     "observation": "",
-    "image": "tortue-geante-des-galapagos.jpg"
+    "image": "tortue-geante-d-aldabra.jpg"
   },
   {
     "id": "murene",
@@ -1179,13 +1188,13 @@
     "image": "cercopitheque-de-brazza.jpg"
   },
   {
-    "id": "cameleon-de-parson",
-    "name": "Caméléon de Parson",
+    "id": "cameleon-panthere",
+    "name": "Caméléon Panthère",
     "zone": "Edenya",
     "location": "",
     "points": 2,
     "observation": "Journée ; inspection attentive de la végétation; surtout branches à hauteur moyenne.",
-    "image": "cameleon-de-parson.jpg"
+    "image": "cameleon-panthere.jpg"
   },
   {
     "id": "paresseux-a-2-doigts",
@@ -1215,8 +1224,8 @@
     "image": "chauve-souris.jpg"
   },
   {
-    "id": "coati",
-    "name": "Coati",
+    "id": "coati-roux",
+    "name": "Coati Roux",
     "zone": "Edenya",
     "location": "",
     "points": 1,
@@ -1240,6 +1249,51 @@
     "points": 3,
     "observation": "",
     "image": "rollier-a-ventre-bleu.jpg"
+  },
+  {
+    "id": "capucin-jacobin",
+    "name": "Capucin Jacobin",
+    "zone": "Edenya",
+    "location": "",
+    "points": 3,
+    "observation": "",
+    "image": "capucin-jacobin.jpg"
+  },
+  {
+    "id": "leiothrix-jaune",
+    "name": "Léiothrix Jaune",
+    "zone": "Edenya",
+    "location": "",
+    "points": 3,
+    "observation": "",
+    "image": "leiothrix-jaune.jpg"
+  },
+  {
+    "id": "toui-a-tet-jaune",
+    "name": "Toui à tête jaune",
+    "zone": "Edenya",
+    "location": "",
+    "points": 3,
+    "observation": "",
+    "image": "toui-a-tet-jaune.jpg"
+  },
+  {
+    "id": "colombine-lumachelle",
+    "name": "Colombine Lumachelle",
+    "zone": "Edenya",
+    "location": "",
+    "points": 3,
+    "observation": "",
+    "image": "colombine-lumachelle.jpg"
+  },
+  {
+    "id": "choucador-a-longue-queue",
+    "name": "Choucador à longue queue",
+    "zone": "Edenya",
+    "location": "",
+    "points": 3,
+    "observation": "",
+    "image": "choucador-a-longue-queue.jpg"
   },
   {
     "id": "maki-catta",
@@ -1305,13 +1359,22 @@
     "image": "nephile-doree.jpg"
   },
   {
-    "id": "moineau-de-java",
-    "name": "Moineau de Java",
+    "id": "padda-de-java",
+    "name": "Padda de Java",
     "zone": "Edenya",
     "location": "Volière aux papillons",
     "points": 2,
     "observation": "",
-    "image": "moineau-de-java.jpg"
+    "image": "padda-de-java.jpg"
+  },
+  {
+    "id": "coryllis-a-tete-bleue",
+    "name": "Coryllis à Tête Bleue",
+    "zone": "Edenya",
+    "location": "Volière aux papillons",
+    "points": 2,
+    "observation": "",
+    "image": "coryllis-a-tete-bleue.jpg"
   },
   {
     "id": "morpho-bleu",
@@ -1663,6 +1726,15 @@
     "points": 3,
     "observation": "",
     "image": "bec-en-sabot-du-nil.jpg"
+  },
+  {
+    "id": "jabiru-d-afrique",
+    "name": "Jabiru d'Afrique",
+    "zone": "La Terre des Origines",
+    "location": "Village Pilotis Africain",
+    "points": 3,
+    "observation": "",
+    "image": "jabiru-d-afrique.jpg"
   },
   {
     "id": "tortue-mata-mata",
