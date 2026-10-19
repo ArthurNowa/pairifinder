@@ -40,7 +40,7 @@
     "name": "Héron Cendré",
     "zone": "Partout",
     "location": "Près des points d'eau",
-    "points": 2,
+    "points": 1,
     "observation": "",
     "image": "heron-cendre.jpg"
   },
@@ -112,7 +112,7 @@
     "name": "Cheval pure-race espagnol",
     "zone": "Cambron l'Abbaye",
     "location": "devant la Mini-Ferme",
-    "points": 2,
+    "points": 1,
     "observation": "Toute la journée ; enclos ouverts; visibilité généralement bonne.",
     "image": "cheval-pure-race-espagnol.jpg"
   },
@@ -121,7 +121,7 @@
     "name": "Cheval Henson",
     "zone": "Cambron l'Abbaye",
     "location": "Autour de la Crypte",
-    "points": 1,
+    "points": 2,
     "observation": "",
     "image": "cheval-henson.jpg"
   },
@@ -337,7 +337,7 @@
     "name": "Pleurodèle de Waltl",
     "zone": "Cambron l'Abbaye",
     "location": "La Crypte",
-    "points": 1,
+    "points": 2,
     "observation": "",
     "image": "pleurodele-de-waltl.jpg"
   },
@@ -373,7 +373,7 @@
     "name": "Ibis chauve (ibis du cap)",
     "zone": "Cambron l'Abbaye",
     "location": "Volière géante",
-    "points": 2,
+    "points": 1,
     "observation": "",
     "image": "ibis-chauve.jpg"
   },
@@ -427,7 +427,7 @@
     "name": "Canard Pilet",
     "zone": "Cambron l'Abbaye",
     "location": "Volière géante",
-    "points": 2,
+    "points": 3,
     "observation": "Toute la journée ; dans ou au bord de l'eau",
     "image": "canard-pilet.jpg"
   },
@@ -454,7 +454,7 @@
     "name": "Spatule rosée",
     "zone": "Cambron l'Abbaye",
     "location": "Volière géante",
-    "points": 2,
+    "points": 1,
     "observation": "Toute la journée ; dans les arbres ou au bord de l'eau",
     "image": "spatule-rosee.jpg"
   },
@@ -589,7 +589,7 @@
     "name": "Tamarin lion doré",
     "zone": "Cambron l'Abbaye",
     "location": "L'Oasis",
-    "points": 2,
+    "points": 3,
     "observation": "",
     "image": "tamarin-lion-dore.jpg"
   },
@@ -634,7 +634,7 @@
     "name": "Touraco Pauline",
     "zone": "Cambron l'Abbaye",
     "location": "L'Oasis",
-    "points": 3,
+    "points": 2,
     "observation": "",
     "image": "touraco-pauline.jpg"
   },
@@ -652,7 +652,7 @@
     "name": "Canard à collier noir",
     "zone": "Cambron l'Abbaye",
     "location": "L'Oasis",
-    "points": 2,
+    "points": 1,
     "observation": "",
     "image": "canard-a-collier-noir.jpg"
   },
@@ -675,13 +675,13 @@
     "image": "perroquet-dracula.jpg"
   },
   {
-    "id": "moineau-de-java",
-    "name": "Moineau de Java",
+    "id": "padda-de-java",
+    "name": "Padda de Java",
     "zone": "Cambron l'Abbaye",
     "location": "L'Oasis",
     "points": 2,
     "observation": "",
-    "image": "moineau-de-java.jpg"
+    "image": "padda-de-java.jpg"
   },
   {
     "id": "cacatoes-des-moluques",
@@ -814,7 +814,7 @@
     "name": "Harfang des neiges",
     "zone": "Cambron l'Abbaye",
     "location": "Volières extérieures",
-    "points": 2,
+    "points": 3,
     "observation": "",
     "image": "harfang-des-neiges.jpg"
   },
@@ -844,15 +844,6 @@
     "points": 1,
     "observation": "Toute la journée ; bassin et plages; très bonne visibilité.",
     "image": "manchot-du-cap.jpg"
-  },
-  {
-    "id": "manchot-de-humboldt",
-    "name": "Manchot du Cap",
-    "zone": "Cambron-sur-mer",
-    "location": "derrière l'aquarium",
-    "points": 2,
-    "observation": "Toute la journée ; bassin et plages; très bonne visibilité.",
-    "image": "manchot-de-humboldt.jpg"
   },
   {
     "id": "otarie-a-fourrure-d-afrique-du-sud",
@@ -1021,7 +1012,7 @@
     "name": "Gavial du Gange",
     "zone": "Edenya",
     "location": "",
-    "points": 2,
+    "points": 3,
     "observation": "",
     "image": "gavial-du-gange.jpg"
   },
@@ -1066,7 +1057,7 @@
     "name": "Drill",
     "zone": "Edenya",
     "location": "",
-    "points": 1,
+    "points": 2,
     "observation": "Journée ; observer les îlots et les zones arborées depuis plusieurs angles.",
     "image": "drill.jpg"
   },
@@ -1093,7 +1084,7 @@
     "name": "Crabe Vampire",
     "zone": "Edenya",
     "location": "",
-    "points": 2,
+    "points": 3,
     "observation": "",
     "image": "crabe-vampire.jpg"
   },
@@ -1183,7 +1174,7 @@
     "name": "Cercopithèque de Brazza",
     "zone": "Edenya",
     "location": "",
-    "points": 2,
+    "points": 3,
     "observation": "Journée ; regarder en hauteur et sur les îlots arborés.",
     "image": "cercopitheque-de-brazza.jpg"
   },
@@ -1219,7 +1210,7 @@
     "name": "Chauve-souris",
     "zone": "Edenya",
     "location": "",
-    "points": 1,
+    "points": 2,
     "observation": "",
     "image": "chauve-souris.jpg"
   },
@@ -1345,7 +1336,7 @@
     "name": "Conure Dorée",
     "zone": "Edenya",
     "location": "Autour du ponton",
-    "points": 3,
+    "points": 2,
     "observation": "",
     "image": "conure-doree.jpg"
   },
@@ -1444,7 +1435,7 @@
     "name": "Loup gris",
     "zone": "La Dernière Frontière",
     "location": "Extérieur",
-    "points": 1,
+    "points": 2,
     "observation": "Matin/fin de journée ; observer les lisières et zones ouvertes; revenir si nécessaire.",
     "image": "loup-gris.jpg"
   },
@@ -1498,7 +1489,7 @@
     "name": "Buffle du Cap",
     "zone": "La Terre des Origines",
     "location": "Extérieur",
-    "points": 1,
+    "points": 2,
     "observation": "Toute la journée ; groupe visible en terrain ouvert.",
     "image": "buffle-du-cap.jpg"
   },
@@ -1561,7 +1552,7 @@
     "name": "Guépard",
     "zone": "La Terre des Origines",
     "location": "Extérieur",
-    "points": 2,
+    "points": 3,
     "observation": "Matin ou fin de journée ; inspecter zones ouvertes et reliefs.",
     "image": "guepard.jpg"
   },
@@ -1569,7 +1560,7 @@
     "id": "gorille-des-plaines",
     "name": "Gorille des plaines",
     "zone": "La Terre des Origines",
-    "location": "Extérieur",
+    "location": "Volcan",
     "points": 1,
     "observation": "",
     "image": "gorille-des-plaines.jpg"
@@ -1578,7 +1569,7 @@
     "id": "colobe-guereza",
     "name": "Colobe Guereza",
     "zone": "La Terre des Origines",
-    "location": "Extérieur",
+    "location": "Volcan",
     "points": 2,
     "observation": "",
     "image": "colobe-guereza.jpg"
@@ -1587,8 +1578,8 @@
     "id": "mangabey-noir",
     "name": "Mangabey Noir",
     "zone": "La Terre des Origines",
-    "location": "Extérieur",
-    "points": 2,
+    "location": "Volcan ?",
+    "points": 3,
     "observation": "",
     "image": "mangabey-noir.jpg"
   },
@@ -1596,7 +1587,7 @@
     "id": "maki-catta",
     "name": "Maki Catta (Lémurien)",
     "zone": "La Terre des Origines",
-    "location": "Extérieur",
+    "location": "Volcan",
     "points": 2,
     "observation": "",
     "image": "maki-catta.jpg"
@@ -1605,7 +1596,7 @@
     "id": "maki-vari-roux",
     "name": "Maki Vari Roux",
     "zone": "La Terre des Origines",
-    "location": "Extérieur",
+    "location": "Volcan",
     "points": 2,
     "observation": "",
     "image": "maki-vari-roux.jpg"
@@ -1614,7 +1605,7 @@
     "id": "maki-vari-noir-et-blanc",
     "name": "Maki Vari Noir et Blanc",
     "zone": "La Terre des Origines",
-    "location": "Extérieur",
+    "location": "Volcan",
     "points": 2,
     "observation": "",
     "image": "maki-vari-noir-et-blanc.jpg"
@@ -1642,7 +1633,7 @@
     "name": "Lion d'Afrique",
     "zone": "La Terre des Origines",
     "location": "Extérieur",
-    "points": 1,
+    "points": 2,
     "observation": "Matin ou fin de journée ; chercher aux points ombragés et zones de repos.",
     "image": "lion-d-afrique.jpg"
   },
@@ -1669,7 +1660,7 @@
     "name": "Sitatunga",
     "zone": "La Terre des Origines",
     "location": "Extérieur",
-    "points": 2,
+    "points": 1,
     "observation": "",
     "image": "sitatunga.jpg"
   },
@@ -1768,7 +1759,7 @@
     "name": "Gecko Géant de Madagascar",
     "zone": "La Terre des Origines",
     "location": "Mersus Emergo",
-    "points": 2,
+    "points": 3,
     "observation": "",
     "image": "gecko-geant-de-madagascar.jpg"
   },
@@ -1804,7 +1795,7 @@
     "name": "Cobra",
     "zone": "La Terre des Origines",
     "location": "Mersus Emergo",
-    "points": 1,
+    "points": 2,
     "observation": "",
     "image": "cobra.jpg"
   },
@@ -1813,7 +1804,7 @@
     "name": "Dragon d'eau",
     "zone": "La Terre des Origines",
     "location": "Mersus Emergo",
-    "points": 2,
+    "points": 1,
     "observation": "",
     "image": "dragon-d-eau.jpg"
   },
@@ -1903,18 +1894,9 @@
     "name": "Gorfou sauteur",
     "zone": "La Terre du Froid",
     "location": "",
-    "points": 1,
+    "points": 2,
     "observation": "Toute la journée ; grotte aux manchots; bonne visibilité mais plus petit.",
     "image": "gorfou-sauteur.jpg"
-  },
-  {
-    "id": "loup-du-canada",
-    "name": "Loup du Canada",
-    "zone": "La Terre du Froid",
-    "location": "",
-    "points": 3,
-    "observation": "Matin/fin de journée ; observer les lisières; clairières et points hauts.",
-    "image": "loup-du-canada.jpg"
   },
   {
     "id": "manchot-papou",
@@ -1930,7 +1912,7 @@
     "name": "Manchot royal",
     "zone": "La Terre du Froid",
     "location": "",
-    "points": 1,
+    "points": 2,
     "observation": "Toute la journée ; grotte aux manchots; excellente visibilité.",
     "image": "manchot-royal.jpg"
   },
@@ -1957,7 +1939,7 @@
     "name": "Raton-laveur",
     "zone": "La Terre du Froid",
     "location": "",
-    "points": 2,
+    "points": 1,
     "observation": "Fin de journée ; animal discret et volontiers caché en journée.",
     "image": "raton-laveur.jpg"
   },
@@ -1969,6 +1951,15 @@
     "points": 2,
     "observation": "Cohabite avec les ratons laveurs.",
     "image": "mouffette-rayee.jpg"
+  },
+  {
+    "id": "loup-du-canada",
+    "name": "Loup du Canada",
+    "zone": "La Terre du Froid",
+    "location": "",
+    "points": 3,
+    "observation": "Matin/fin de journée ; observer les lisières; clairières et points hauts.",
+    "image": "loup-du-canada.jpg"
   },
   {
     "id": "renne",
@@ -2146,7 +2137,7 @@
     "name": "Gibbon à joues jaunes",
     "zone": "Le Royaume de Ganesha",
     "location": "",
-    "points": 1,
+    "points": 2,
     "observation": "Matin surtout ; écouter les vocalises et regarder les structures hautes.",
     "image": "gibbon-a-joues-jaunes.jpg"
   },
@@ -2164,7 +2155,7 @@
     "name": "Macaque à crête",
     "zone": "Le Royaume de Ganesha",
     "location": "",
-    "points": 1,
+    "points": 2,
     "observation": "Journée ; groupe généralement visible dans les structures et au sol.",
     "image": "macaque-a-crete.jpg"
   },
@@ -2205,15 +2196,6 @@
     "image": "sanglier-des-visayas.jpg"
   },
   {
-    "id": "saimiri",
-    "name": "Saïmiri",
-    "zone": "Le Royaume de Ganesha",
-    "location": "",
-    "points": 1,
-    "observation": "Journée ; observer branches et déplacements rapides du groupe.",
-    "image": "saimiri.jpg"
-  },
-  {
     "id": "tigre-blanc-royal",
     "name": "Tigre blanc royal",
     "zone": "Le Royaume de Ganesha",
@@ -2221,15 +2203,6 @@
     "points": 2,
     "observation": "Matin ou fin de journée ; faire plusieurs points de vue; chercher zones ombragées.",
     "image": "tigre-blanc-royal.jpg"
-  },
-  {
-    "id": "elephant-d-asie",
-    "name": "Éléphant d'Asie",
-    "zone": "Le Royaume de Ganesha",
-    "location": "",
-    "points": 1,
-    "observation": "Toute la journée ; grands espaces; très forte visibilité.",
-    "image": "elephant-d-asie.jpg"
   },
   {
     "id": "langur-de-francois",
@@ -2245,7 +2218,7 @@
     "name": "Macaque japonais",
     "zone": "Le Royaume du Milieu",
     "location": "Extérieur",
-    "points": 1,
+    "points": 2,
     "observation": "Toute la journée ; groupe généralement visible; notamment autour des structures et points d’eau.",
     "image": "macaque-japonais.jpg"
   },
@@ -2317,7 +2290,7 @@
     "name": "Grue à cou Blanc",
     "zone": "Le Royaume du Milieu",
     "location": "Extérieur",
-    "points": 2,
+    "points": 1,
     "observation": "",
     "image": "grue-a-cou-blanc.jpg"
   },
@@ -2542,7 +2515,7 @@
     "name": "Buffle d'eau",
     "zone": "Les Îles du Soleil Levant",
     "location": "",
-    "points": 1,
+    "points": 2,
     "observation": "Toute la journée ; grand animal en espace ouvert.",
     "image": "buffle-d-eau.jpg"
   },
